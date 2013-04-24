@@ -14,12 +14,8 @@ public class Job {
        Default constructor creates a Job "Unemployed", 0
      */
     public Job(){
-	/*
 	this.job = "Unemployed";
 	this.annualWageInDollars = 0;
-	*/
-	this.job = "STUBB";
-	this.annualWageInDollars = -1; //STUBB
     }
 
     /**
@@ -28,12 +24,8 @@ public class Job {
        @param annualWageInDollars The job's annual wage in dollars
      */
     public Job(String job, int annualWageInDollars){
-	/*
 	this.job = job;
 	this.annualWageInDollars = annualWageInDollars;
-	*/
-	this.job = "STUBB";
-	this.annualWageInDollars = -1; //STUBB
     }
 
     /**
@@ -41,8 +33,7 @@ public class Job {
        @param job Title of job
      */
     public void setJob(String job){
-	//this.job = job;
-	this.job = "STUBB";
+	this.job = job;
     }
 
     /**
@@ -50,24 +41,21 @@ public class Job {
        @param annualWageInDollars Annual wage in dollars
     */
     public void setAnnualWageInDollars(int annualWageInDollars){
-	//this.annualWageInDollars = annualWageInDollars;
-	this.annualWageInDollars = -1; //STUBB
+	this.annualWageInDollars = annualWageInDollars;
     }
 
     /**
        @return job (e.g. Professor, Lecturer, Programmer
     */
     public String getJob(){
-	//return job;
-	return "STUBB";
+	return job;
     }
 
     /**
       @return annualWageInDollars (e.g. 20000, 35000, 100000)
     */
     public int getAnnualWageInDollars(){
-	//return annualWageInDollars;
-	return -1; //STUBB
+	return annualWageInDollars;
     }
 
     /**
@@ -76,15 +64,14 @@ public class Job {
        @return true if this object and o share the same values
     */
     public boolean equals(Object o){
-	/*
+	if (o == null)
+	    return false;
 	if (! (o instanceof Job) )
 	    return false;
+
 	Job other = (Job) o;
-	return (other.getJob().equals(this.getJob()) &
-		other.getAnnualWageInDollars().equals(
-		this.getAnnualWageInDollars);
-	*/
-	return false; //STUBB
+	return (this.getJob().equals(other.getJob()) &&
+		this.getAnnualWageInDollars() == other.getAnnualWageInDollars());
     }
 
     /**
@@ -92,10 +79,9 @@ public class Job {
        @return String representation of Job
     */
     public String toString(){
-	/*String string;
-	string = getJob() + ", " getAnnualWageInDollars();
-	return string;*/
-	return "STUBB";
+	String string;
+	string = this.job + ", " + this.annualWageInDollars;
+	return string;
     }
     /**
        Sample main that uses the default, two-arg constructors and toString
