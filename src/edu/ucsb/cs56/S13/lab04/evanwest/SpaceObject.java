@@ -15,18 +15,27 @@ public class SpaceObject{
     private String name;
     private int catalogNumber;
 
+    /** Default constructor creates a SpaceObject "Earth" with catalog number 1 */
     public SpaceObject(){}
 
+    /**
+       @param name name of the object (e.g. Earth, SpaceBacon)
+       @param catalogNumber arbitrary catalog number assigned to object, should be distinct
+    */
     public SpaceObject(String name, int catalogNumber){}
 
+    /** @param name sets new String name for the object, (e,g, Earth etc) */
     public void setName(String name){}
 
+    /** @return String containing name of the object (e.g. Earth etc) */
     public String getName(){
 	return "stub"; //@@@TODO STUB
     }
 
-    public void setCatalogNumber(){}
+    /** @param catalogNumber integer to assign as new catalog number for object, generally incrementing per object */
+    public void setCatalogNumber(int catalogNumber){}
 
+    /** @return integer that is catalog number of object, largely arbitrary */
     public double getCatalogNumber(){
 	return -1; //@@@TODO STUB
     }
