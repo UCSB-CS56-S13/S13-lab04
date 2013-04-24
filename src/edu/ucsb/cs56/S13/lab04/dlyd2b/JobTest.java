@@ -15,14 +15,14 @@ import static org.junit.Assert.assertFalse;
 
 public class JobTest {
    
-    @Test public void test_DefaultConstructor_and_Getters(){
+    @Test public void test_defaultConstructor_and_getters(){
 	Job j = new Job();
 	assertEquals("Unemployed", j.getJob());
 	assertEquals(0, j.getAnnualWageInDollars());
     }
 
-    @Test public void test_TwoArgConstructor_and_Getters(){
-	job j = new Job("Retail Cashier", 25000);
+    @Test public void test_twoArgConstructor_and_getters(){
+	Job j = new Job("Retail Cashier", 25000);
 	assertEquals("Retail Cashier", j.getJob());
 	assertEquals(25000, j.getAnnualWageInDollars());
     }
@@ -30,6 +30,16 @@ public class JobTest {
     @Test public void test_toString(){
 	Job j = new Job();
 	assertEquals("Unemployed, 0", j.toString());
+    }
+
+    @Test public void test_getJob(){
+	Job j = new Job();
+	assertEquals("Unemployed", j.getJob());
+    }
+
+    @Test public void test_getAnnualWageInDollars(){
+	Job j = new Job();
+	assertEquals(0, j.getAnnualWageInDollars());
     }
 
     @Test public void test_setJob(){
@@ -40,8 +50,20 @@ public class JobTest {
 
     @Test public void test_setAnnualWageInDollars(){
 	Job j = new Job();
-	j.setAnnaulWageInDollars(100);
+	j.setAnnualWageInDollars(100);
 	assertEquals(100, j.getAnnualWageInDollars());
     }
-}
+    
+    @Test public void test_equals() {
+	Job j = new Job();
+	Job k = new Job();
+	assertTrue(j.equals(k));
+    }
 
+    @Test public void test_notEquals() {
+	Job j = new Job();
+	Job k = new Job("Cook", 30000);
+	assertFalse(j.equals(k));
+    }
+
+} // class Job.java
