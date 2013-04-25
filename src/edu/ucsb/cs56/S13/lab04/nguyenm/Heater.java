@@ -8,43 +8,36 @@ public class Heater {
 	/** Creates and initializes a Heater object to "Dyson" at 
 	temperature 30 */
 	Heater() {
-		brandName = "Dyson";
-		temperature = 30;
+		//STUB
 	}
 	
 	Heater(String brandName, int temperature) {
-		this.brandName = brandName;
-		this.temperature = temperature;
+		//STUB
 	}
 
 	void setBrandName(String brandName) {
-		this.brandName = brandName;
+		//STUB
 	}
 	
 	String getBrandName() {
-		return brandName;
+		//STUB
+		return null;
 	}
 
 	void setTemperature(int temperature) {
-		this.temperature = temperature;
+		//STUB
 	}
 
 	int getTemperature() {
-		return temperature;
+		return 0;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("[brandName=%s, temperature=%s]",
-				brandName, temperature);
+		return null;
 	}
 
 	public boolean equals(Object object) {
-		if (object instanceof Heater) {
-			Heater heater = (Heater) object;
-			return this.brandName.equals(heater.brandName) && this.temperature == heater.temperature;
-		}
-
-		else return super.equals(object);
+		return false;
 	}
 }
