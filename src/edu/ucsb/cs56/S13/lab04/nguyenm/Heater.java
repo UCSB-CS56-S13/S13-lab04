@@ -47,4 +47,8 @@ public class Heater {
 
 		else return super.equals(object);
 	}
+
+	public static void main(String[] args) {
+		System.out.println(new Heater());
+	}
 }
