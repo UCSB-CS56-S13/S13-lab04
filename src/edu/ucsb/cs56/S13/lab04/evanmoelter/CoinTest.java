@@ -55,7 +55,7 @@ public class CoinTest {
     public void test_toString_and_Setters() {
 	Coin c = new Coin();
 	c.setValue(50);
-	c.setName("half-dollar, 50 cents");
+	c.setName("half-dollar");
 	assertEquals("half-dollar, 50 cents", c.toString());
     }
     
