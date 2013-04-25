@@ -32,7 +32,7 @@ public class RadioChannelTest{
 
     @Test public void testGetFreq(){
 	RadioChannel rc = new RadioChannel("UCSBTalks",3500);
-	assertEquals(3500,rc.getName());
+	assertEquals(3500,rc.getFreq());
     }
 
     @Test public void testSetName(){
@@ -57,4 +57,21 @@ public class RadioChannelTest{
 	RadioChannel rc2 = new RadioChannel("UCSBTalks",3500);
 	assertEquals(true,rc.equals(rc2));
     }
+	
+	@Test public void testNullEquals(){
+	RadioChannel rc = new RadioChannel("UCSBTalks",3500);
+	assertEquals(false,rc.equals(null));
+	}
+	
+	@Test public void testNullNullEquals(){
+	RadioChannel rc = new RadioChannel();
+	RadioChannel rc2 = new RadioChannel();
+	assertEquals(true,rc.equals(rc2));
+	}
+	
+	@Test public void testForiegnEquals(){
+	RadioChannel rc = new RadioChannel();
+	assertEquals(false,rc.equals(5));
+	}
+	
 }

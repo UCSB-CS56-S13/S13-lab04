@@ -17,8 +17,8 @@ public class RadioChannel{
      */
 
     public RadioChannel(){
-	this.name = "stub";
-	this.freq = 42;
+	this.name = null;
+	this.freq = 0;
     }
 
     /**
@@ -28,8 +28,8 @@ public class RadioChannel{
      */
 
     public RadioChannel(String name, int freq){
-	this.name = "stub";
-	this.freq = 42;
+	this.name = name;
+	this.freq = freq;
     }
 
     /**
@@ -38,7 +38,7 @@ public class RadioChannel{
      */
 
     public String getName(){
-	return "stub";
+	return this.name;
     }
 
     /**
@@ -47,7 +47,7 @@ public class RadioChannel{
      */
 
     public int getFreq(){
-	return 42;
+	return this.freq;
     }
 
     /**
@@ -56,7 +56,7 @@ public class RadioChannel{
      */
 
     public void setName(String name){
-	this.name = "stub";
+	this.name = name;
     }
     
     /**
@@ -65,7 +65,7 @@ public class RadioChannel{
      */
 
     public void setFreq(int freq){
-	this.freq =42;
+	this.freq = freq;
     }
 
     /**
@@ -74,7 +74,7 @@ public class RadioChannel{
      */
 
     public String toString(){
-	return "stub";
+	return String.format(name + " at frequency " + freq + "Hz" );
     }
 
     /**
@@ -82,8 +82,16 @@ public class RadioChannel{
      *@return true for equals false for not equals
      */
 
-    public boolean equals(){
-	return false;
+    public boolean equals(Object o){
+	
+	if(o==null) return false;
+	if( ! ( o instanceof RadioChannel )) return false;
+	
+	RadioChannel rc = (RadioChannel) o;
+	
+	if(this.name == rc.name && this.freq == rc.freq) return true;
+	else return false;
+	
     }
 
 }
