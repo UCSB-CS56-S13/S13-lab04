@@ -101,7 +101,7 @@ public class Purchased{
 		Purchased p = new Purchased();
 		p.setObjectPurchased("Chair");
 		p.setNumberPurchased(4);
-		System.out.println(p.toString());
+		System.out.println(p);
 	}
 
 }//End of Purchased class
