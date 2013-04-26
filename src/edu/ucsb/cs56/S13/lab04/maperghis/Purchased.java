@@ -16,7 +16,7 @@ public class Purchased{
  	*noarg default Constructor for objects of class Purchased
  	*/
 	public Purchased(){
-		this.objectPurchased = null;
+		this.objectPurchased = "";
 		this.numberPurchased = 0;
 	}
 
@@ -36,7 +36,7 @@ public class Purchased{
 	* @return object purchased
  	*/ 
 	public String getObjectPurchased(){
-		return "Stub";//This is a stub
+		return this.objectPurchased;//This is a stub
 	}	
 
 	/**
@@ -45,7 +45,7 @@ public class Purchased{
  	* @return number purchased
  	*/  
 	public int getNumberPurchased(){
-		return -42;//This is a stub
+		return this.numberPurchased;//This is a stub
 	}
 
 	/**
