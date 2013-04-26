@@ -94,4 +94,15 @@ public class RadioChannel{
 	
     }
 
+/**
+*Main method for RadioChannel class
+*/
+
+	public static void main(String[] args){
+		RadioChannel rc = new RadioChannel("UCSBTalks", 3500);
+		System.out.println("Two arg constructor: " + rc);
+		RadioChannel rc2 = new RadioChannel();
+		System.out.println("No arg constructor: " + rc2);
+	}
+	
 }
