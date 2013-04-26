@@ -36,7 +36,7 @@ public class Purchased{
 	* @return object purchased
  	*/ 
 	public String getObjectPurchased(){
-		return this.objectPurchased;//This is a stub
+		return this.objectPurchased;
 	}	
 
 	/**
@@ -45,7 +45,7 @@ public class Purchased{
  	* @return number purchased
  	*/  
 	public int getNumberPurchased(){
-		return this.numberPurchased;//This is a stub
+		return this.numberPurchased;
 	}
 
 	/**
@@ -73,7 +73,7 @@ public class Purchased{
  	* @return formatted Purchased object (e.g. Book: 5 purchased)
  	*/  
 	public String toString(){
-		return "Stub";//This is a stub
+		return this.objectPurchased + ": " + this.numberPurchased + " purchased";
 	}
 
 	/**
@@ -84,7 +84,13 @@ public class Purchased{
  	* @return true if objects are equal, otherwise false
  	*/  
 	public boolean equals(Object o){
-		return false;//This is a stub
+		if (o==null) return false;
+		if (! (o instanceof Purchased) ) return false;
+		Purchased p = (Purchased) o;
+		if (p.getNumberPurchased()!=this.numberPurchased) return false;
+		if (!(p.getObjectPurchased().equals(this.objectPurchased))) return false;
+
+		return true;
 	}
 
 	/**

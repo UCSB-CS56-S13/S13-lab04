@@ -41,7 +41,7 @@ public class PurchasedTest{
 	@Test
 		public void test_toString1(){
 			Purchased p = new Purchased("Chair",4);
-			assertEquals("Chair : 4 purchased",p.toString());
+			assertEquals("Chair: 4 purchased",p.toString());
 		}
 
 	/**
@@ -85,7 +85,7 @@ public class PurchasedTest{
                         Purchased p = new Purchased("Chair",4);
 			p.setObjectPurchased("Table");
                         assertEquals("Table",p.getObjectPurchased());
-			assertEquals(4,p.getObjectPurchased());
+			assertEquals(4,p.getNumberPurchased());
                 }
 
 	/**
