@@ -66,7 +66,7 @@ public void test_NoArgConstructor(){
 @Test
 public void test_getCurrentNum(){
         Dorm ft = new Dorm("Santa Catalina", 450);
-        assertEquals("450",ft.getCurrentNum());
+        assertEquals(450,ft.getCurrentNum());
         
 }
 

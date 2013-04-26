@@ -10,29 +10,29 @@ public class Dorm{
     int currentNum; 	//indicates current number of students living in the dorm
 
     public Dorm(){
-	this.name = "stub"; // @@@Stub fix me
-	this.currentNum = -42; // @@@Stub fix me
+	this.name = ""; 
+	this.currentNum = 0; 
     }
     public Dorm(String name, int currentNum){
-	this.name = "stub"; // @@@Stub fix me
-	this.currentNum = -42; // @@@Stub fix me
+	this.name = name;
+	this.currentNum = currentNum; 
     }
     public void setName(String name){
-	this.name = "stub"; // @@@Stub fix me
+	this.name = name; 
     }
     public String getName(){
-	return "stub"; //@@@ Stub fix me
+	return this.name; 
     }
 
     public void setCurrentNum(int currentNum){
-	this.currentNum = -42;// @@@Stub fix me
+	this.currentNum = currentNum;
     }
     public int getCurrentNum(){
-	return -42; //@@@Stub fix me
+	return this.currentNum; 
     }
     public String toString(){
 	String s = String.format("%d",this.currentNum);
-	return "Dorm: " + this.name + ", CurrentNum: " + s;
+	return "Dorm: " + this.name + ", currentNum: " + s;
     }
     public boolean equals(Object o){
 	if (! (o instanceof Dorm))
