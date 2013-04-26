@@ -75,4 +75,29 @@ public class PurchasedTest{
                         Purchased p1 = new Purchased("Chair",4);
                         assertEquals(true,p1.equals(p1));
                 }
+	
+	/**
+        *Test case for Purchased.setObjectPurchased()
+        *@see Purchased
+        */
+        @Test
+                public void test_setObjectPurchased1(){
+                        Purchased p = new Purchased("Chair",4);
+			p.setObjectPurchased("Table");
+                        assertEquals("Table",p.getObjectPurchased());
+			assertEquals(4,p.getObjectPurchased());
+                }
+
+	/**
+        *Test case for Purchased.setNumberPurchased()
+        *@see Purchased
+        */
+        @Test
+                public void test_setNumberPurchased1(){
+                        Purchased p = new Purchased("Chair",4);
+                        p.setNumberPurchased(10);
+                        assertEquals(10,p.getNumberPurchased());
+			assertEquals("Chair",p.getObjectPurchased());
+                }
 }
+
