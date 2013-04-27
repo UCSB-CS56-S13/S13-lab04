@@ -32,6 +32,7 @@ public class Music{
     */
 
     public void setTrackName( String trackName){
+	this.trackName = trackName;
     }
 
     /**
@@ -39,6 +40,7 @@ public class Music{
     */
 
     public void setSecondsDuration(int secondsDuration){
+	this.secondsDuration = secondsDuration;
 
     }
 
@@ -47,7 +49,7 @@ public class Music{
     */
     
     public String getTrackName(){
-	return "stub"; // @@@STUB fix meee!
+	return this.trackName; // @@@STUB fix meee!
     }
 
     /**
@@ -55,7 +57,7 @@ public class Music{
     */
 
     public int getSecondsDuration(){
-	return 0; //@@@STUB fix meee!
+	return this.secondsDuration; //@@@STUB fix meee!
     }
 
     /**
@@ -63,7 +65,8 @@ public class Music{
     */
 
     public String toString(){
-	return "stub"; //@@@STUB fix meee!
+	String s = String.format(this.getTrackName() + " - " + this.getSecondsDuration() + "sec");
+	return s; //@@@STUB fix meee!
     }
     
     /**
@@ -71,7 +74,7 @@ public class Music{
     */
 
     public boolean equals(Music song){
-	return true; //@@@STUB fix meee!
+	return false; //@@@STUB fix meee!
     }
 
     /**
