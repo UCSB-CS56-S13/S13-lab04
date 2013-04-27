@@ -6,15 +6,12 @@ public class Gun{
 	private int bulletsRemaining;
 	private int maxBullets;
 	public Gun(){
-	/* Stub!
 		model="Hand Gun";
 		bulletsRemaining=0;
 		maxBullets=6;
-	*/
 	}
 	public Gun(String name, int bullets, int max)
 	{
-	/* Stub!
 		model=name;
 		if(max<0)
 		maxBullets=0;
@@ -26,54 +23,39 @@ public class Gun{
 		bulletsRemaining=maxBullets;
 		else
 		bulletsRemaining=bullets;
-	*/
 	}
 	public int getMaxBullets(){
-		return -199;//Stub!
-		//return maxBullets;
+		return maxBullets;
 	}	
 	public String getModel(){
-		return "Stub!";//Stub!
-		//return model;
+		return model;
 	}
 	public int getBulletsRemaining(){
-		return -199;//Stub!
-		//return bulletsRemaining;
+		return bulletsRemaining;
 	}
 	public void setMaxBullets(int max){
-	/* Stub!
 		if(max<0)
 		maxBullets=0;
 		else
 		maxBullets=max;
-	*/
 	}
 	public void setModel(String name){
-	/* Stub!
 		model=name;
-	*/
 	}
 	public void setBulletsRemaining(int bullets){
-	/*Stub!
 		if(bullets<0)
 		bulletsRemaining=0;
 		else if(bullets>maxBullets)
 		bulletsRemaining=maxBullets;
 		else
 		bulletsRemaining=bullets;
-	*/
 	}
 	public String toString()
 	{
-		return "Stub";//Stub!
-	/*
 		return "Model: "+model+"   BulletsRemaining: "+ bulletsRemaining + "   MaxBullets: "+maxBullets;
-	*/
 	}
 	public boolean equals(Object o)
 	{
-		return false; //Stub!
-	/* Stub!
 		if(o==null)
 			return false;
 		if(!(o instanceof Gun))
@@ -86,37 +68,28 @@ public class Gun{
 			return true;
 		
 		return false;
-	*/
 	}
 	public void shoot()
 	{
-	/* Stub!
 		if(bulletsRemaining>0)
 		bulletsRemaining--;
 		
 		else
 		System.out.println("Out of bullet");
-	*/
 	}
 	public boolean isEmpty()
 	{
-		return false;//Stub!
-	/*
 		if(bulletsRemaining==0)
 			return true;
 		return false;
-	*/
 	}
 	public void reload()
 	{
-	/* Stub!
 		bulletsRemaining=maxBullets;
-	*/
 	}
 	
 	public static void main(String[] args)
 	{
-	/*  Stub!
 		Gun gun = new Gun();
 		Gun ak47= new Gun("AK-47",30,30);
 		for(int i=0;i<3;i++){
@@ -140,6 +113,5 @@ public class Gun{
 	
 		System.out.println(ak47);
 		}
-	*/
 	}
 }
