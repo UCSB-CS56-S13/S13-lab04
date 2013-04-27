@@ -66,7 +66,7 @@ public class Music{
 
     public String toString(){
 	String s = String.format(this.getTrackName() + " - " + this.getSecondsDuration() + "sec");
-	return s; //@@@STUB fix meee!
+	return s;
     }
     
     /**
@@ -74,7 +74,14 @@ public class Music{
     */
 
     public boolean equals(Music song){
-	return false; //@@@STUB fix meee!
+	String s = this.getTrackName();
+	String s2 = song.getTrackName();
+	if (s.equals(s2)){
+	    if(this.getSecondsDuration() == song.getSecondsDuration()){
+		return true;
+	    }
+	}
+	return false; 
     }
 
     /**
