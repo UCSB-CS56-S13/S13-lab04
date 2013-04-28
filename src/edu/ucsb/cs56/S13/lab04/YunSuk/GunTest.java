@@ -3,6 +3,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+/** test class for Gun
+ 
+  @author Yun Suk Chang
+  @version CS56, S13, lab04
+  @see Gun
+ 
+*/
 public class GunTest{
 	@Test
 	public void test_defaultConstructor()
