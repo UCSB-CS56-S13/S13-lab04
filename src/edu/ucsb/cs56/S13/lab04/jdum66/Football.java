@@ -14,11 +14,12 @@ public class Football {
     private int numTitles;
 
     /**
-       The Default Constructor creates the team, San Diego Chargers,
+       The Default Constructor sets an empty string for the team name
        and sets the number of titles to 0.
     */
     public Football() {
-	//stub;
+	this.teamName = "San Diego Chargers";
+	this.numTitles = 0;
     }
 
     /** 
@@ -26,35 +27,36 @@ public class Football {
        @param int titles represents the number of Super Bowls the team has won
     */
     public Football(String name, int titles) {
-	//stub;
+	this.teamName = name;
+	this.numTitles = titles;
     }
 
     /**
        @return teamName
     */
     public String getTeamName() {
-	return ""; //@STUB
+	return teamName; 
     }
 
     /**
        @return numTitles
     */
     public int getNumTitles() {
-	return -55; //@STUB
+	return numTitles; 
     }
     
     /**
        @param set teamName to name
     */
     public void setTeamName(String name) {
-	//stub;
+	this.teamName = name;
     }
 
     /**
        @param set numTitles to titles
     */
     public void setNumTitles(int titles) {
-	//stub;
+	this.numTitles = titles;
     }
     
     /** 
@@ -62,7 +64,12 @@ public class Football {
 	@return "Team Name: Number of Championships"
     */
     public String toString() {
-	return ""; //STUB
+	if (this.numTitles != 1) {
+	    return this.teamName + ": " + this.numTitles + " championships";
+	}
+	else {
+	    return this.teamName + ": " + this.numTitles + " championship";
+	}
     }
 
     /**
@@ -70,13 +77,21 @@ public class Football {
        @return true if same team (false if different teams)
     */
     public boolean equals(Object o) {
-	return false; //STUB
+	if (! (o instanceof Football) ) {
+            return false;
+	}
+	else {
+	    Football other = (Football) o;
+	    return (other.getTeamName() == this.getTeamName() &&
+		    other.getNumTitles() == this.getNumTitles());
+	}
     }
 
     /**
        Simple main method to use Football class
     */
     public static void main (String [] args) {
-	//STUB;
+	Football team = new Football();
+	System.out.println(team);
     }
 }

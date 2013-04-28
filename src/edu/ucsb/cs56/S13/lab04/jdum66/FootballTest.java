@@ -20,7 +20,7 @@ public class FootballTest {
     @Test
     public void NoArgConstructor_Test() {
 	Football team = new Football();
-	assertEquals("", team.getTeamName());
+	assertEquals("San Diego Chargers", team.getTeamName());
 	assertEquals(0, team.getNumTitles());
     }
     
