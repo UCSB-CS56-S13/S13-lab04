@@ -4,7 +4,7 @@
    @see Spaceship
 */
 
-package edu.ucsb.cs56.s13.lab04.Yokura;
+//package edu.ucsb.cs56.s13.lab04.Yokura;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -13,8 +13,6 @@ import static org.junit.Assert.assertFalse;
 
 public class SpaceshipTest {
 
-    public static void main (String[]args) {
-	
 	// Test no arg constructor
 	@Test public void testNoArgConstructor() {
 	    Spaceship s = new Spaceship();
@@ -81,5 +79,4 @@ public class SpaceshipTest {
 	    Spaceship s = new Spaceship("Moon",5);
 	    assertEquals("Destination: Moon\nPeople: 5", s.toString());
 	}
-    }
 }

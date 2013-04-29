@@ -2,7 +2,7 @@
    @author Fanny Kuang
 */
 
-package edu.ucsb.cs45.s13.lab04.Yokura;
+//package edu.ucsb.cs45.s13.lab04.Yokura;
 
 public class Spaceship {
 
@@ -22,12 +22,16 @@ public class Spaceship {
     /** 
      * Get spaceship destination
      */
-    public String getDestination() {}
+    public String getDestination() {
+        return "stub";
+    }
 
     /** 
      * Get Number of spaceship people
      */
-    public int getNumPeople() {}
+    public int getNumPeople() {
+        return -1;
+    }
 
     /**
      * Set new destination
@@ -41,16 +45,16 @@ public class Spaceship {
      */
     public void setNumPeople(int newNum) {}
 
-    public String toString() {}
+    public String toString() {
+        return "stub";
+    }
 
     /**
      * Test against another spaceship class to see if they are equal
      * @param someSpaceship  Spaceship object to compare to
      */
-    public void equals(Spaceship someSpaceship) {};
-
-
-
-
+    public boolean equals(Spaceship someSpaceship) {
+        return false;
+    }
 
 }
