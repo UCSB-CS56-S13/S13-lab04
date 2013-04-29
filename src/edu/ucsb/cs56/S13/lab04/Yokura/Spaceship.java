@@ -2,8 +2,7 @@
    @author Fanny Kuang
 */
 
-// Working on home computer environment. doesn't need package.
-// package edu.ucsb.cs56.S13.lab04.Yokura
+package edu.ucsb.cs56.S13.lab04.Yokura;
 
 public class Spaceship {
 

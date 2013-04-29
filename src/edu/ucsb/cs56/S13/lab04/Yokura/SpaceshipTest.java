@@ -4,8 +4,7 @@
    @see Spaceship
 */
 
-// Working on home computer environment. doesn't need package.
-// package edu.ucsb.cs56.S13.lab04.Yokura
+package edu.ucsb.cs56.S13.lab04.Yokura;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
