@@ -80,9 +80,13 @@ public class Spaceship {
 
     /**
      * Main method. Testing general outputs.
+     * simple testing for constructors and tostring
      */
     public static void main (String[] args) {
-
+        Spaceship galactia = new Spaceship();
+        Spaceship martial = new Spaceship("Mars",3);
+        System.out.println(galactia);
+        System.out.println(martial);
     }
 
 }
