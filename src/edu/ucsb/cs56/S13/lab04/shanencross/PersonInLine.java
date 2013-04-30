@@ -66,7 +66,22 @@ public class PersonInLine  {
 	@return String representation of person containing both name and place in line
      */
     public String toString() {
-	return "ergrsejonlsd"; // STUB
+
+	int onesDigit = numberInLine & 10; // Final, ones' place digit of number in line, to choose between "st", "nd", "rd", and "th" suffixes
+	String suffix = "th"; // Will be "st", "nd", "rd", or "th" (as in 1st, 2nd, 3rd, 8th, etc.)
+	                     // "th" by default"
+	if (onesDigit == 1) { // different if 1, 2, or 3
+	    suffix = "st";
+	}
+	if (onesDigit == 2) {
+	    suffix = "nd";
+	}
+	if (onesDigit == 3) {
+	    suffix = "rd";
+	}
+	
+
+	return this.name+", "+this.numberInLine+suffix+" in line";
     }
 
     /** Tests if another object is equal to this person
