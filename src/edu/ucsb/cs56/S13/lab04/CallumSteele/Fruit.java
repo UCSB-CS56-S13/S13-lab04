@@ -30,28 +30,28 @@ public class Fruit {
  	   @return name (e.g. Apple, Orange)
 	*/
 	public String getName() {
-		return "stub"; // stub
+		return this.name;
 	}
 
 	/**
  	   @return weightGrams (e.g. 100, 110)
 	*/
 	public int getWeightGrams() {
-		return -42; // stub
+		return this.weightGrams;
 	}
 
 	/**
  	   @param name Name of the fruit (e.g. Apple, Orange)
 	*/
 	public void setName(String name) {
-		this.name = "stub"; // stub
+		this.name = name;
 	}
 
 	/**
  	   @param weightGrams Weight of the fruit in grams (e.g. 100, 110)
 	*/
 	public void setWeightGrams(int weightGrams) {
-		this.weightGrams = -42; // stub
+		this.weightGrams = weightGrams;
 	}
 
 	/**
@@ -59,7 +59,7 @@ public class Fruit {
 	   @return String representation of fruit;
 	*/
 	public String toString() {
-		return "stub"; // stub
+		return this.name + ", " + this.weightGrams + " grams";
 	}
 
 	/**
@@ -68,6 +68,9 @@ public class Fruit {
 	   @return true if this object is the same fruit as o
 	*/
 	public boolean equals(Object o) {
-		return false; // stub
+		if (! (o instanceof Fruit) )
+			return false;
+		Fruit other = (Fruit) o;
+		return (other.getName().equals(this.name) & (other.getWeightGrams() == this.weightGrams));
 	}
 }
