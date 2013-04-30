@@ -73,4 +73,13 @@ public class Fruit {
 		Fruit other = (Fruit) o;
 		return (other.getName().equals(this.name) & (other.getWeightGrams() == this.weightGrams));
 	}
+
+	/**
+ 	   A sample main that uses the class.
+	*/
+	public static void main(String [] args) {
+		Fruit f1 = new Fruit();
+		Fruit f2 = new Fruit("Orange", 120);
+		System.out.println(f2);
+	}
 }
