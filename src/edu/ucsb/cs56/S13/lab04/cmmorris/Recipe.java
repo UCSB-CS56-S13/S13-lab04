@@ -12,8 +12,8 @@ public class Recipe {
     /** Default Constructor create a Recipe with the name empty and a cooking time of 0 minutes */
 
     public Recipe() {
-	this.meal = "stub";
-	this.cookingTimeInMinutes = -1;
+	this.meal = "empty";
+	this.cookingTimeInMinutes = 0;
     }
 
     /**
@@ -21,36 +21,36 @@ public class Recipe {
        @param cookingTimeInMinutes cooking time in minutes (e.g. 15, 20, 30, 45)
     */
     public Recipe(String meal, int cookingTimeInMinutes) {
-	this.meal = "stub";
-	this.cookingTimeInMinutes = -1;
+	this.meal = meal;
+	this.cookingTimeInMinutes = cookingTimeInMinutes;
     }
 
     /**
        @return meal name of meal (e.g. Macaroni and Cheese, Chocolate Chip Cookies)
     */
     public String getMeal() {
-	return "stub";
+	return this.meal;
     }
 
     /**
        @return cookingTimeInMinutes cooking time in minutes (e.g. 15, 20, 30, 45)
     */
     public int getCookingTimeInMinutes() {
-	return -1;
+	return this.cookingTimeInMinutes;
     }
 
     /** 
 	@param meal the new meal
     */
-    public void setMeal( String name ) {
-	//	this.name = name;
+    public void setMeal( String meal ) {
+	this.meal = meal;
     }
 
     /**
        @param cookingTimeInMinutes the new cooking time
     */
     public void setCookingTimeInMinutes ( int cookingTimeInMinutes ) {
-	//	this.cookingTimeInMinutes = cookingTimeInMinutes;
+       	this.cookingTimeInMinutes = cookingTimeInMinutes;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Recipe {
        @return String representation of recipe
     */
     public String toString() {
-	return "stub";
+	return this.meal + ", " + this.cookingTimeInMinutes + "min";
     }
 
     /**
@@ -67,6 +67,11 @@ public class Recipe {
        @return true of this object is the same radio station as o
     */
     public boolean equals(Object o) {
+	if (o==null) {return false; }
+	if (! (o instanceof Recipe) ) {return false;}
+	Recipe r = (Recipe) o;
+	if ( this.getMeal().equals(r.getMeal()) && this.cookingTimeInMinutes == r.cookingTimeInMinutes )
+	    return true;
 	return false;
     }
 

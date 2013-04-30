@@ -32,7 +32,7 @@ public class RecipeTest {
     public void test_TwoArgConstructor_Cookies() {
      	Recipe cookies = new Recipe("Chocolate Chip Cookies", 30);
 	assertEquals("Chocolate Chip Cookies", cookies.getMeal());
-	assertEquals(45, cookies.getCookingTimeInMinutes());
+	assertEquals(30, cookies.getCookingTimeInMinutes());
     }
 
     @Test
