@@ -67,7 +67,7 @@ public class PersonInLine  {
      */
     public String toString() {
 
-	int onesDigit = numberInLine & 10; // Final, ones' place digit of number in line, to choose between "st", "nd", "rd", and "th" suffixes
+	int onesDigit = numberInLine % 10; // Final, ones' place digit of number in line, to choose between "st", "nd", "rd", and "th" suffixes
 	String suffix = "th"; // Will be "st", "nd", "rd", or "th" (as in 1st, 2nd, 3rd, 8th, etc.)
 	                     // "th" by default"
 	if (onesDigit == 1) { // different if 1, 2, or 3
