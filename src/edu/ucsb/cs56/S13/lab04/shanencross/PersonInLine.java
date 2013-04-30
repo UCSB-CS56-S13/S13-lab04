@@ -20,7 +20,8 @@ public class PersonInLine  {
        so that the person is first in line by default (0th in line is meaningless).
      */
     public PersonInLine() {
-        //STUB
+	this.name = "";
+	this.numberInLine = 1;
     }
 
 
@@ -30,32 +31,33 @@ public class PersonInLine  {
        
      */
     public PersonInLine(String name, int numberInLine) {
-	// STUB
+	this.name = name;
+	this.numberInLine = numberInLine;
     }
 
 
     /** @return Name of the person
      */
     public String getName() { 
-	return "afioadjfao"; // STUB 
+	return this.name; 
     }
 
     /** @return Number representing the person's place in line (e.g. 1 for 1st place, 7 for 7th place)
      */
     public int getNumberInLine() { 
-	return -1; // STUB
+	return this.numberInLine;
     }
 
     /** @param name Name of the person
      */
     public void setName(String name) { 
-	// STUB 
+	this.name = name;
     }
 
     /** @param numberInLine representing the person's place in line (e.g. 1 for 1st place, 7 for 7th place)
      */
     public void setNumberInLine(int numberInLine) {
-	// STUB
+	this.numberInLine = numberInLine;
     }
 
     /** Convert to a string representation that includes name and place in line.
@@ -72,7 +74,22 @@ public class PersonInLine  {
 	@return true or false value indicating equality of object to the person in line
      */
     public boolean equals(Object o) {
-	return false; // STUB
+	// Necessary Boiler Plate code
+	// Makes sure o is not null and is of the same datatype
+	if (o == null)
+            return false;
+        if (!(o instanceof PersonInLine))
+            return false;
+
+	PersonInLine other = (PersonInLine) o;
+
+	// true if both name and line number match
+	if (this.name == other.getName() && this.numberInLine == other.getNumberInLine()) {
+	    return true;
+	}
+	
+	// otherwise, false
+	return false;
     }
 
     /** A sample main() method which uses the PersonInLine class.
