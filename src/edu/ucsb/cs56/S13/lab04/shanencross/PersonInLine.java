@@ -111,6 +111,24 @@ public class PersonInLine  {
      */
 
     public static void main(String args[]) {
-	// STUB
+	PersonInLine person1 = new PersonInLine("John Sheridan", 1);
+	System.out.println(person1.toString());
+
+	person1.setName("Jean-Luc Picard");
+	person1.setNumberInLine(2);
+	System.out.println(person1.toString());
+
+	PersonInLine person2 = new PersonInLine("Benjamin Sisko", 3);
+	if (person1.equals(person2)) {
+	    System.out.println("Error in toEquals method");
+	}
+	else {
+	    System.out.println(person1.getName() + " is not "+ person2.getName()); 
+	}
+
+	System.out.println(person2.getName() + " is in place #"+person2.getNumberInLine());
+
+
+
     }
 }
