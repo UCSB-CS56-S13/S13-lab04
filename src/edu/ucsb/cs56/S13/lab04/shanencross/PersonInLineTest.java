@@ -25,7 +25,7 @@ public class PersonInLineTest {
     @Test public void testStringAndIntConstructor() {
         PersonInLine linePerson = new PersonInLine("Bob Miller", 8);
         assertEquals("Bob Miller", linePerson.getName());
-        assertEquals("8", linePerson.getNumberInLine());
+        assertEquals(8, linePerson.getNumberInLine());
     }
 
     @Test public void testGetName() {
