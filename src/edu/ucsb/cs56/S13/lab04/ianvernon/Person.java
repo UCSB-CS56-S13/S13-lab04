@@ -15,46 +15,46 @@ public class Person
   
     public Person()
     {
-	name = "stub";
-	ageInYears = -42;
+	name = "John";
+	ageInYears = 25;
     }
 
     /**
        @param name name (e.g., Bob, John, Jason)
-       @param age ageInYears (e.g. 12, 13, 14
+       @param ageInYears age of person in years (e.g. 12, 13, 14
     */
     public Person(String name, int ageInYears)
     {
-	this.name = "stub";
-	this.ageInYears = -42;
+	this.name = name;
+	this.ageInYears = ageInYears;
     }
 
     /** @return name (e.g., Bob, John, Jason) */
 
     public String getName()
     {
-	return "stub";
+	return this.name;
     }
 
     /** @return age in years (e.g., 25, 30, 40) */
 
     public int getAgeInYears()
     {
-	return -42;
+	return this.ageInYears;
     }
     
     /** @param name changes this.name to name */
 
     public void setName(String name)
     {
-	return;
+	this.name = name;
     }
     
     /** @param ageInYears changes this.ageInYears to ageInYears */
 
     public void setAgeInYears(int ageInYears)
     {
-	return;
+	this.ageInYears = ageInYears;
     }
 
     /** Creates a string representation of a person. Examples: "Name: Ian, Age: 20", "Name John:, Age: 21"
@@ -63,15 +63,20 @@ public class Person
 
     public String toString()
     {
-	return "stub";
+	return "Name: " + this.name + ", Age: " + this.ageInYears ;
     }
     /** are two people equal? that is, do they have the same age in years and the same name?
-	@param p another person to compare
-	@returns true if person is of the same age in years and the same name as this 
+	@param o another object to compare
+	@return true if person is of the same age in years and the same name as this 
     */
-    public boolean equals(Person p)
+    public boolean equals(Object o)
     {
-	return false;
+	if(o == null)
+	    return false;
+	if (! (o instanceof Person) )
+	    return false;
+	Person p  = (Person) o;     
+	return (this.ageInYears == p.ageInYears & (this.name).equals(p.name));
     }
     public static void main(String[] args)
     {
