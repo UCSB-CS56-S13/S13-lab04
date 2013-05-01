@@ -11,9 +11,11 @@ public class Tree{
 
 	private String scientificName;
 	private int avgHeightMeters;
-
+        
+        /**Default Constructor sets the tree to a Joshua tree */
 	public Tree(){
-	return; // @@@ STUBZ!!!
+	    this.scientificName = "Yucca brevifolia";
+	    this.avgHeightMeters = 10;
 	}
 
 	/**
@@ -21,29 +23,30 @@ public class Tree{
 	 * @param avgHeightMeters The height that the tree is expected to grow
 	 */
 	public Tree(String scientificName, int avgHeightMeters) {
-	return; // @@@ MOAR STUBZ!!
+	    this.scientificName = scientificName;
+	    this.avgHeightMeters = avgHeightMeters;
 	}
 
 	public void setScientificName(String scientificName) {
-	return; // @@@ YES WE HAVE STUBZ!!1!
+	    this.scientificName = scientificName;
 	}
 
 	public void setAvgHeightMeters(int avgHeightMeters) {
-	return; // @@@ STUBZ HOT OFF THE GRIDDLE!!!
+	    this.avgHeightMeters = avgHeightMeters;
 	}
 
 	/**
 	 * @return scientificName
 	 */
 	public String getScientificName() {
-		return "Of the Stubs!!"; // @@@ STUBZ NOW WITH CULTURAL REFERENCE
+	    return this.scientificName;
 	}
 
 	/**
 	 * @return avgHeightMeters
 	 */
 	public int getAvgHeightMeters() {
-		return -1; // @@@ NOT ALL STUBZ WITH CULTURAL REFERENCES
+	    return this.avgHeightMeters;
 	}
 
 	/**
@@ -54,7 +57,10 @@ public class Tree{
 	 * @return String representation of Tree
 	 */
 	public String toString() {
-		return " To the Planet of the Stubs!!!"; // @@@ BUT THIS ONE DOES!1!!
+	    return (this.scientificName
+		    + ": "
+		    + String.format("%d",this.avgHeightMeters)
+		    + " m");
 	}
 
 	/**
@@ -63,9 +69,14 @@ public class Tree{
 	 * @return true if this tree is the same as the object o
 	 */
 	public boolean equals(Object o) {
-		return false; // @@@ THIS STUBZ IS NOT A LIE!!ONE1!!
+	    if(!(o instanceof Tree))
+		return false;
+	    Tree t = (Tree) o;
+	    return (this.getScientificName().equals(t.getScientificName())
+		    && this.getAvgHeightMeters() == t.getAvgHeightMeters());
 	}
 
+        /**A main method to demonstrate the Tree class */
 	public static void main(String[] args) {
 		return; // THIS STUBZ DOES NOTHING!!1!ONE!11!ONE
 	}
