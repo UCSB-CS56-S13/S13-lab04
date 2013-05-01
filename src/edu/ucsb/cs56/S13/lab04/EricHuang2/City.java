@@ -1,12 +1,21 @@
 package edu.ucsb.cs56.S13.lab04.EricHuang2;
 
+/**
+ * City represent a city with its name and population
+ * @author Eric huang
+ * @version CS56, S13, lab04
+ * @see CityTest
+
+*/
 public class City {
 	
 	private String name = "";
 	private int population = 0;
 	
 	/**
-	 * default constructor for Santa Barbara, population 89045
+	 * default constructor, setting
+	 * the name of the city to 
+	 * Santa Barbara, and population to 89045
 	 */
 	public City()
 	{
