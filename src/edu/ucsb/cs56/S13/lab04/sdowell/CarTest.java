@@ -29,6 +29,18 @@ public class CarTest{
     }
 
     @Test
+    public void test_setName(){
+	Car c = new Car();
+	c.setName("Mustang");
+	assertEquals("Mustang", c.getName());
+
+    }
+    public void test_setYear(){
+	Car c = new Car();
+	c.setYear(1974);
+	assertEquals(1974, c.getYear());
+    }
+    @Test
     public void test_toString(){
 	Car c = new Car();
 	assertEquals("Dodge Challenger 2010", c.toString());

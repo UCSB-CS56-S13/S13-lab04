@@ -10,8 +10,12 @@ class Car{
 	year = 2010;
     }
     public Car(String name, int year){
+	this.name = "stub";
+	this.year = -42;
+	/*
 	this.name = name;
 	this.year = year;
+	*/
     }
     public String getName(){
 	return "stub";
@@ -22,10 +26,12 @@ class Car{
 	//return year;
     }
     public void setName(String name){
-	this.name = name;
+	this.name = "stub";
+	//this.name = name;
     }
     public void setYear(int year){
-	this.year = year;
+	this.year = -42;
+	//this.year = year;
     }
     public String toString(){
 	return "stub";
