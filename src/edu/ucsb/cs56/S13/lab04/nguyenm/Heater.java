@@ -11,7 +11,7 @@ public class Heater {
 
 	/** Creates and initializes a Heater object to "Dyson" at 
 	temperature 30 */
-	Heater() {
+	public Heater() {
 		brandName = "Dyson";
 		temperature = 30;
 	}
@@ -23,7 +23,7 @@ public class Heater {
 	  * 		heat the room by before turning off (measured 
 	  * 		in degrees Celcius).
 	  */
-	Heater(String brandName, int temperature) {
+	public Heater(String brandName, int temperature) {
 		this.brandName = brandName;
 		this.temperature = temperature;
 	}
@@ -31,14 +31,14 @@ public class Heater {
 	/** Sets the brand name of this heater 
 	  * @param brandName the new brand name for this heater 
 	  */
-	void setBrandName(String brandName) {
+	public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 	
 	/** Retrieves the brand name of this heater 
-	  * @returns the brand name of this heater
+	  * @return the brand name of this heater
 	  */
-	String getBrandName() {
+	public String getBrandName() {
 		return brandName;
 	}
 
@@ -47,23 +47,23 @@ public class Heater {
 	  * @param temperature the temperature to heat the room up to 
 	  * 		before turning off as measured in degrees Celcius
 	  */
-	void setTemperature(int temperature) {
+	public void setTemperature(int temperature) {
 		this.temperature = temperature;
 	}
 
 	/** Retrieves the temperature of this heater to heat up to before 
 	  * turning off its heating function
-	  * @returns the temperature to heat the roo up to before turning 
+	  * @return the temperature to heat the roo up to before turning 
 			off as measured in degrees Celcius
 	  */
-	int getTemperature() {
+	public int getTemperature() {
 		return temperature;
 	}
 
 	@Override
 	/** Converts this object into a human readable value as described here: </br>
 	  * <code>[brandName=..., temperature=...]</code></br>
-	  * @returns a human readable string representing the object's value
+	  * @return a human readable string representing the object's value
 	  */
 	public String toString() {
 		return String.format("[brandName=%s, temperature=%s]",
@@ -72,7 +72,7 @@ public class Heater {
 
 	/** Compares to objects to see if they have the same brand name and 
 	  * the same temperature
-	  * @returns true if they have the same value, false otherwise
+	  * @return true if they have the same value, false otherwise
 	  */
 	public boolean equals(Object object) {
 		if (object instanceof Heater) {
