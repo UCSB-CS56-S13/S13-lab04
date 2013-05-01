@@ -5,11 +5,11 @@ public class Videogame() {
     private int yearReleased; // year that the videogame was released
 
     public Videogame() {
-    
+	// stub
     }
 
     public Videogame(String name, int yearReleased) {
-	
+	// stub
     }
 
     public String getName() {
@@ -21,11 +21,11 @@ public class Videogame() {
     }
 
     public void setName(String name) {
-	
+	// stub
     }
 
     public void setYearReleased(int yearReleased) {
-	
+	// stub
     }
 
     public String toString() {
@@ -36,5 +36,8 @@ public class Videogame() {
 	return false; // stub
     }
 
+    public static void main(String[] args) {
+	// stub
+    }
     
 }
