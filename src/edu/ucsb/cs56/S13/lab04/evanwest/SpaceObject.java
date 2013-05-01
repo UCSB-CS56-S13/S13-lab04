@@ -16,32 +16,40 @@ public class SpaceObject{
     private int catalogNumber;
 
     /** Default constructor creates a SpaceObject "Earth" with catalog number 1 */
-    public SpaceObject(){}
+    public SpaceObject(){
+	//this.name="Earth";
+	//this.catalogNumber=1;
+    }
 
     /**
        @param name name of the object (e.g. Earth, SpaceBacon)
        @param catalogNumber arbitrary catalog number assigned to object, should be distinct
     */
-    public SpaceObject(String name, int catalogNumber){}
+    public SpaceObject(String name, int catalogNumber){
+	//this.name=name;
+	//this.catalogNumber=catalogNumber;
+    }
 
     /** @param name sets new String name for the object, (e,g, Earth etc) */
     public void setName(String name){
-	//set name
+	//this.name=name;
     }
 
     /** @return String containing name of the object (e.g. Earth etc) */
     public String getName(){
-	return "stub"; //@@@TODO STUB
+	return "stub";
+	//return this.name;
     }
 
     /** @param catalogNumber integer to assign as new catalog number for object, generally incrementing per object */
     public void setCatalogNumber(int catalogNumber){
-	//set catalog number
+	//this.catalogNumber=catalogNumber;
     }
 
     /** @return integer that is catalog number of object, largely arbitrary */
-    public double getCatalogNumber(){
-	return -1; //@@@TODO STUB
+    public int getCatalogNumber(){
+	return -1;
+	//return this.catalogNumber;
     }
 
     /** Prints object to String with name and catalog number
@@ -49,12 +57,14 @@ public class SpaceObject{
     */
     public String toString(){
 	return "stub";
+	//return this.catalogNumber+"-"+this.name;
     }
 
     /**Are two objects the same?
        @return Whether two objects have the same name and catalog number
      */
     public boolean equals(SpaceObject o){
+	//return o.getName().equals(this.name) && o.getCatalogNumber()==this.catalogNumber;
 	return false;
     }
 
@@ -62,6 +72,10 @@ public class SpaceObject{
        A sample main that uses this object.
     */
     public static void main(String[] args){
-	//do stuff here
+	SpaceObject o = new SpaceObject();
+	SpaceObject n = new SpaceObject("Luna", 2);
+
+	System.out.println("Object 1: "+o);
+	System.out.println("Object 2: "+n);
     }
 }
