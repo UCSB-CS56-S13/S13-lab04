@@ -10,10 +10,10 @@ public class City {
 	 */
 	public City()
 	{
-		this.name = "stub";
-		this.population = 0;
-		//this.name = "Santa Barbara";
-		//this.population = 89045;
+		//this.name = "stub";
+		//this.population = 0;
+		this.name = "Santa Barbara";
+		this.population = 89045;
 	}
 	
 	/** 
@@ -22,10 +22,10 @@ public class City {
      */
 	public City(String name, int population)
 	{
-		this.name = "stub";
-		this.population = 0;
-		//this.name = name;
-		//this.population = population;
+		//this.name = "stub";
+		//this.population = 0;
+		this.name = name;
+		this.population = population;
 	}
 	
 	/**
@@ -33,8 +33,8 @@ public class City {
     */
 	public String getName()
 	{
-		return "stub";
-		//return this.name;
+		//return "stub";
+		return this.name;
 	}
 	
 	/**
@@ -42,8 +42,8 @@ public class City {
     */
 	public int getPopulation()
 	{
-		return 0;
-		//return this.population;
+		//return 0;
+		return this.population;
 	}
 	
 	/**
@@ -52,9 +52,9 @@ public class City {
      */
 	public String toString()
 	{
-		return "stub";
-		//String result = "City name: " + this.name + ". Population: " + this.population;
-		//return result;
+		//return "stub";
+		String result = "City name: " + this.name + ". Population: " + this.population;
+		return result;
 	}
 	
 	/**
@@ -66,14 +66,14 @@ public class City {
 		/* if the city is missing more than 3 people you might have a 
 		 * problem...
 		 */
-		return false;
-		/*int tolerance = 3;
+		//return false;
+		int tolerance = 3;
 		if (! (o instanceof City) )
 			return false;
 		City otherCity = (City) o;
 		
 		return (otherCity.getName().equals(this.getName()) &
-		Math.abs(otherCity.getPopulation() - this.getPopulation()) < tolerance ); */
+		Math.abs(otherCity.getPopulation() - this.getPopulation()) < tolerance );
 	}
 	
 	/** 
