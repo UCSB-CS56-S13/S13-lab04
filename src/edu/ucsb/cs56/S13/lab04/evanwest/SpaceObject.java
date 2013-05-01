@@ -25,7 +25,9 @@ public class SpaceObject{
     public SpaceObject(String name, int catalogNumber){}
 
     /** @param name sets new String name for the object, (e,g, Earth etc) */
-    public void setName(String name){}
+    public void setName(String name){
+	//set name
+    }
 
     /** @return String containing name of the object (e.g. Earth etc) */
     public String getName(){
@@ -33,21 +35,32 @@ public class SpaceObject{
     }
 
     /** @param catalogNumber integer to assign as new catalog number for object, generally incrementing per object */
-    public void setCatalogNumber(int catalogNumber){}
+    public void setCatalogNumber(int catalogNumber){
+	//set catalog number
+    }
 
     /** @return integer that is catalog number of object, largely arbitrary */
     public double getCatalogNumber(){
 	return -1; //@@@TODO STUB
     }
 
+    /** Prints object to String with name and catalog number
+	@return String with format "CatalogNumber - Name"
+    */
     public String toString(){
 	return "stub";
     }
 
+    /**Are two objects the same?
+       @return Whether two objects have the same name and catalog number
+     */
     public boolean equals(SpaceObject o){
 	return false;
     }
 
+    /**
+       A sample main that uses this object.
+    */
     public static void main(String[] args){
 	//do stuff here
     }
