@@ -1,35 +1,68 @@
 package edu.ucsb.cs56.S13.lab04.sdowell;
+/** Car is a class to represent a Car
+ @author Sam Dowell
+ @version 05/03/2013 for lab04, cs56, S13
+*/
 
 class Car{
 
-    String name;
-    int year;
-
+    String name; // Name of a car (e.g. Dodge Challenger)
+    int year; // Year of car model (e.g. 2006)
+    /** Default constructor
+	 Sets default dummy values to 2010 Dodge Challenger
+    */
     public Car(){
 	name = "Dodge Challenger";
 	year = 2010;
     }
+    /** Constructor
+	@param name Name of the car (e.g. Dodge Challenger)
+	@param year Year of car model (e.g. 2006)
+    */
     public Car(String name, int year){
 	this.name = name;
 	this.year = year;
     }
+    /**
+	Get name of car
+    */
     public String getName(){
 
 	return name;
     }
+    /**
+	Get year of car model
+    */
     public int getYear(){
 	return year;
     }
+    /** Setter for name
+	@param name Name of the car
+    */
     public void setName(String name){
 	this.name = name;
     }
+    /** Setter for year
+	@param year Year of car model
+    */
     public void setYear(int year){
 	this.year = year;
     }
+    /**
+	Return formatted string representation of attributes (e.g. 2006 Dodge Challenger)
+    */
     public String toString(){
 	return this.year + " " + this.name;
     }
+    /**
+	Returns true if the name and year of o are equal to this
+	@param o Object to be compared to this
+    */
     public boolean equals(Object o){
+	if(o == null)
+		return false;
+	else if(!(o instanceof Car))
+		return false;
 
 	Car c = (Car) o;
 	if(c.getName().equals(this.name) && c.getYear()==this.year)
@@ -42,4 +75,4 @@ class Car{
 	System.out.println(c.toString());
 	
     }
-}
+} // class Car
