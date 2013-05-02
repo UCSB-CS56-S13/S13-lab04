@@ -107,7 +107,7 @@ public class PersonInLine  {
 	return false;
     }
 
-    /** A sample main() method which uses the PersonInLine class.
+    /** A sample main() method which tests the PersonInLine class.
      */
 
     public static void main(String args[]) {

@@ -14,7 +14,7 @@ import static org.junit.Assert.assertFalse;
 
 
 public class PersonInLineTest {
-    
+
 
     @Test public void testNoArgConstructor() {
         PersonInLine linePerson = new PersonInLine();
