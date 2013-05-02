@@ -73,8 +73,19 @@ public class Videogame {
        check if two Videogames are equivalent, that is, if their name and yearReleased are the same
        @return whether or not two videogames are equivalent
     */
-    public boolean equals() {
-	return false; // stub
+    public boolean equals(Object o) {
+        if (! (o instanceof Videogame) )
+            return false;
+        Videogame other = (Videogame) o;
+        
+	if (!this.name.equals(other.name)) {
+	    return false;
+	}
+	if (this.yearReleased != other.yearReleased) {
+	    return false;
+	}
+	
+	return true;
     }
 
     /**
