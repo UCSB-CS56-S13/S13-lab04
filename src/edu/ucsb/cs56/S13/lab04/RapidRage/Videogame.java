@@ -13,7 +13,8 @@ public class Videogame {
        default Constructor
     */
     public Videogame() {
-	// stub
+	this.name = "";
+	this.yearReleased = 0;
     }
     
     /**
@@ -22,8 +23,8 @@ public class Videogame {
        @param yearReleased The year the Videogame was released
     */
     public Videogame(String name, int yearReleased) {
-	this.name = "abc"; // stub
-	yearReleased = -42; // stub
+	this.name = name;
+	this.yearReleased = yearReleased;
     }
 
     /**
@@ -31,7 +32,7 @@ public class Videogame {
        @return the name of the Videogame
     */
     public String getName() {
-	return null; // stub
+	return this.name;
     }
     
     /**
@@ -39,7 +40,7 @@ public class Videogame {
        @return the year the Videogame was released
     */
     public int getYearReleased() {
-	return -42; // stub
+	return this.yearReleased;
     }
 
     /**
@@ -47,7 +48,7 @@ public class Videogame {
        @param name The name of the Videogame
     */
     public void setName(String name) {
-	this.name = "abc"; // stub
+	this.name = name;
     }
     
     /**
@@ -55,7 +56,7 @@ public class Videogame {
        @param yearReleased the year the Videogame was released
     */
     public void setYearReleased(int yearReleased) {
-	this.yearReleased = -42; // stub
+	this.yearReleased = yearReleased;
     }
 
     /**
@@ -64,7 +65,8 @@ public class Videogame {
        @return the String representation of Videogame
     */
     public String toString() {
-	return "lol"; // stub
+	String output = this.name + ", " + this.yearReleased;
+	return output;
     }
     
     /**
