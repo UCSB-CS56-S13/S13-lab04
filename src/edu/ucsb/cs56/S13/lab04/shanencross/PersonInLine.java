@@ -111,24 +111,41 @@ public class PersonInLine  {
      */
 
     public static void main(String args[]) {
+
+	System.out.println("First we try initializing a new PersonInLine with the String \"John Sheridan\" and the int 1.");
 	PersonInLine person1 = new PersonInLine("John Sheridan", 1);
+	System.out.println("Then we try the toString() method on it and print it out.");
 	System.out.println(person1.toString());
 
+	System.out.println("Let's use the set methods to change Sheridan to \"Jean-Luc Picard\" and his place in line to 2.");
 	person1.setName("Jean-Luc Picard");
 	person1.setNumberInLine(2);
+	System.out.println("And use the toString() method again:");
 	System.out.println(person1.toString());
 
+	System.out.println("Now let's put Benjamin Sisko in place number three as a new object/reference...");
 	PersonInLine person2 = new PersonInLine("Benjamin Sisko", 3);
+	System.out.println("...but print it out using the get methods instead of toString().");
+	System.out.println(person2.getName() + " is in place #"+person2.getNumberInLine());
+	
+	System.out.println("Let's see if Sisko and Picard are the same person.");
 	if (person1.equals(person2)) {
-	    System.out.println("Error in toEquals method");
+	    System.out.println(person1.getName() + " is "+ person2.getName()); 	  
 	}
 	else {
 	    System.out.println(person1.getName() + " is not "+ person2.getName()); 
 	}
+	System.out.println("Hopefully, said they were not..");
 
-	System.out.println(person2.getName() + " is in place #"+person2.getNumberInLine());
-
-
+	System.out.println("But is Picard himself?");
+	System.out.println("Let's point another reference to Picard, and compare the references.");
+	PersonInLine person3 = person1;
+	if (person3.equals(person1)) {
+	    System.out.println(person3.getName() + " is "+ person1.getName()); 	  
+	}
+	else {
+	    System.out.println(person3.getName() + " is not "+ person1.getName()); 
+	}
 
     }
 }

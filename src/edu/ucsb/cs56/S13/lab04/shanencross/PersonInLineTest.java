@@ -98,9 +98,33 @@ public class PersonInLineTest {
 	assertEquals(expected, linePerson.toString());
     }
 
-    @Test public void testToStrin41() {
+    @Test public void testToString4() {
 	PersonInLine linePerson = new PersonInLine("Bob Miller", 2);
 	String expected = "Bob Miller, 2nd in line";
+	assertEquals(expected, linePerson.toString());
+    }
+
+    @Test public void testToString5() {
+	PersonInLine linePerson = new PersonInLine("Bob Miller", 38);
+	String expected = "Bob Miller, 38th in line";
+	assertEquals(expected, linePerson.toString());
+    }
+
+    @Test public void testToString6() {
+	PersonInLine linePerson = new PersonInLine("Bob Miller", 1013);
+	String expected = "Bob Miller, 1013rd in line";
+	assertEquals(expected, linePerson.toString());
+    }
+
+    @Test public void testToString7() {
+	PersonInLine linePerson = new PersonInLine("Bob Miller", 101);
+	String expected = "Bob Miller, 101st in line";
+	assertEquals(expected, linePerson.toString());
+    }
+
+    @Test public void testToString8() {
+	PersonInLine linePerson = new PersonInLine("Bob Miller", 322);
+	String expected = "Bob Miller, 322nd in line";
 	assertEquals(expected, linePerson.toString());
     }
 
