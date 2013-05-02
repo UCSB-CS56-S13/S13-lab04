@@ -24,14 +24,14 @@ class Car{
 	this.year = year;
     }
     /**
-	Get name of car
+	@return name of car
     */
     public String getName(){
 
 	return name;
     }
     /**
-	Get year of car model
+	@return year of car model
     */
     public int getYear(){
 	return year;
@@ -49,14 +49,14 @@ class Car{
 	this.year = year;
     }
     /**
-	Return formatted string representation of attributes (e.g. 2006 Dodge Challenger)
+	@return formatted string representation of attributes (e.g. 2006 Dodge Challenger)
     */
     public String toString(){
 	return this.year + " " + this.name;
     }
     /**
-	Returns true if the name and year of o are equal to this
 	@param o Object to be compared to this
+	@return true if the name and year of o are equal to this
     */
     public boolean equals(Object o){
 	if(o == null)
