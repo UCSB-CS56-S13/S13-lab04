@@ -92,9 +92,11 @@ public class Videogame {
 
     /**
        execute the program
+       try toString and at least one constructor
     */
     public static void main(String[] args) {
-	// stub
+	Videogame v = new Videogame("Super Mario 64", 1996);
+	System.out.println("The videogame is: " + v.toString());
     }
     
 }
