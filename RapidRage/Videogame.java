@@ -22,7 +22,8 @@ public class Videogame {
        @param yearReleased The year the Videogame was released
     */
     public Videogame(String name, int yearReleased) {
-	// stub
+	this.name = "abc"; // stub
+	yearReleased = -42; // stub
     }
 
     /**
@@ -46,7 +47,7 @@ public class Videogame {
        @param name The name of the Videogame
     */
     public void setName(String name) {
-	// stub
+	this.name = "abc"; // stub
     }
     
     /**
@@ -54,7 +55,7 @@ public class Videogame {
        @param yearReleased the year the Videogame was released
     */
     public void setYearReleased(int yearReleased) {
-	// stub
+	this.yearReleased = -42; // stub
     }
 
     /**
@@ -63,7 +64,7 @@ public class Videogame {
        @return the String representation of Videogame
     */
     public String toString() {
-	return null; // stub
+	return "lol"; // stub
     }
     
     /**
