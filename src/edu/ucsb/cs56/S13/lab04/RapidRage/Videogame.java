@@ -74,7 +74,9 @@ public class Videogame {
        @return whether or not two videogames are equivalent
     */
     public boolean equals(Object o) {
-        if (! (o instanceof Videogame) )
+        if (o == null)
+	    return false;
+	if (! (o instanceof Videogame) )
             return false;
         Videogame other = (Videogame) o;
         
