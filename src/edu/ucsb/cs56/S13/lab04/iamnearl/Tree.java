@@ -7,7 +7,7 @@ package edu.ucsb.cs56.S13.lab04.iamnearl;
  * @version 4/28/13, S13, cs56
  * @see Tree
  */
-public class Tree{
+public class Tree {
 
 	private String scientificName;
 	private int avgHeightMeters;
@@ -78,7 +78,11 @@ public class Tree{
 
         /**A main method to demonstrate the Tree class */
 	public static void main(String[] args) {
-		return; // THIS STUBZ DOES NOTHING!!1!ONE!11!ONE
+		Tree datePalm = new Tree("Phoenix dactylifera", 21);
+		Tree joshuaTree = new Tree ();
+		System.out.println("Two trees from the desert:");
+		System.out.println("From Iraq is the " + datePalm);
+		System.out.println("From California is the " + joshuaTree);
 	}
 
 }
