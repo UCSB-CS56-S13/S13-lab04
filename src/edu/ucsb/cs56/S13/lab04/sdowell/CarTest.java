@@ -25,7 +25,7 @@ public class CarTest{
     public void test_TwoArgConstructor_and_getters_ToyotaCorolla_2006(){
 	Car c = new Car("Toyota Corolla", 2006);
 	assertEquals("Toyota Corolla", c.getName());
-	assertEquals("2006", c.getYear());
+	assertEquals(2006, c.getYear());
     }
 
     @Test
@@ -43,13 +43,13 @@ public class CarTest{
     @Test
     public void test_toString(){
 	Car c = new Car();
-	assertEquals("Dodge Challenger 2010", c.toString());
+	assertEquals("2010 Dodge Challenger", c.toString());
 
     }
     @Test
     public void test_toString_HondaCRV_2004(){
 	Car c = new Car("Honda CRV", 2004);
-	assertEquals("Honda CRV 2004", c.toString());
+	assertEquals("2004 Honda CRV", c.toString());
 
 
     }
@@ -57,7 +57,7 @@ public class CarTest{
     @Test
     public void test_toString_ToyotaCorolla_2006(){
 	Car c = new Car("Toyota Corolla", 2006);
-	assertEquals("Toyota Corolla 2006", c.toString());
+	assertEquals("2006 Toyota Corolla", c.toString());
     }
     @Test
     public void test_equals_equal1(){
