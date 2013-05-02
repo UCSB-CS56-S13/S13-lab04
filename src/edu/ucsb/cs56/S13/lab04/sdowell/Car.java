@@ -4,7 +4,7 @@ package edu.ucsb.cs56.S13.lab04.sdowell;
  @version 05/03/2013 for lab04, cs56, S13
 */
 
-class Car{
+public class Car{
 
     String name; // Name of a car (e.g. Dodge Challenger)
     int year; // Year of car model (e.g. 2006)
