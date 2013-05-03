@@ -15,9 +15,8 @@ public class CruisePassenger {
 	/*** Default Constructor creates a Cruise Passenger with No Passenger Name Set and Room Number 0 .*/
 	
     public CruisePassenger() {
-		//passenger = "No Passenger Name Set";
-		//roomNum = 0;
-		return;
+		passenger = "No Passenger Name Set";
+		roomNum = 0;
     }
 
 	/** 
@@ -26,9 +25,8 @@ public class CruisePassenger {
      */
 	
     public CruisePassenger(String passenger, int roomNum) {
-		//this.passenger = passenger;
-		//this.roomNum = roomNum;
-		return;
+		this.passenger = passenger;
+		this.roomNum = roomNum;
     }
 
 	/**
@@ -36,8 +34,7 @@ public class CruisePassenger {
 	*/
 	
     public void setPassenger(String passenger) {
-		//this.passenger = passenger;
-		return;
+		this.passenger = passenger;
     }
 
 	/**
@@ -45,8 +42,7 @@ public class CruisePassenger {
 	*/
 	
     public String getPassenger() {
-		//return passenger;
-		return "stub";
+		return passenger;
     }
 	
 	/**
@@ -54,8 +50,7 @@ public class CruisePassenger {
 	*/
 	
 	public void setRoomNum(int roomNum) {
-		//this.roomNum = roomNum;
-		return;
+		this.roomNum = roomNum;
 	}
 	
 	/**
@@ -63,8 +58,7 @@ public class CruisePassenger {
 	*/
 	
 	public int getRoomNum() {
-		//return roomNum;
-		return -42;
+		return roomNum;
 	}
 	
 	/**
@@ -73,8 +67,7 @@ public class CruisePassenger {
      */
 	
 	public String toString() {
-		//System.out.println("Passenger Name: " + passenger + ", Room Number: " + String.format("%d", roomNum));
-		return "This is a stub!";
+		return "Passenger Name: " + passenger + ", Room Number: " + String.format("%d", roomNum);
 	}
 	
 	/**
@@ -84,13 +77,10 @@ public class CruisePassenger {
      */
 	
 	public boolean equals(Object o) { 
-		return false;
-		/*
 		if (! (o instanceof CruisePassenger) )
 			return false;
 		CruisePassenger other = (CruisePassenger) o;
 		return (other.getPassenger().equals(this.getPassenger()) & other.getRoomNum() == this.getRoomNum() ); 
-		*/
     }
 	
 	/** 
