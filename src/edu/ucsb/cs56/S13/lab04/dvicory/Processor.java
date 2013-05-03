@@ -67,7 +67,9 @@ public class Processor {
 
        @return String representation of processor
     */
-    public String toString() { return "stub"; } // TODO stub
+    public String toString() {
+	return "[" + this.family + ", " + this.coreSpeed + " MHz]";
+    }
 
     /**
        Are the processors equal?
