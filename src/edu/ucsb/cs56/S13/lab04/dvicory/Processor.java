@@ -41,26 +41,26 @@ public class Processor {
     /**
        @return the common family name of the processor
     */
-    public String getFamily() { return "stub"; } // TODO stub
+    public String getFamily() { return this.family; }
 
     /**
        Sets the common family name of the processor
 
        @param family the common family name to be set
     */
-    public void setFamily(String family) { } // TODO stub
+    public void setFamily(String family) { this.family = family; }
 
     /**
        @return the core speed of the processor, in MHz
     */
-    public int getCoreSpeed() { return -42; } // TODO stub
+    public int getCoreSpeed() { return this.coreSpeed; }
 
     /**
        Sets the core speed of the processor
 
        @param coreSpeed the core speed to be set
     */
-    public void setCoreSpeed(int coreSpeed) { } // TODO stub
+    public void setCoreSpeed(int coreSpeed) { this.coreSpeed = coreSpeed; }
 
     /**
        Convert processor to a string representation. Examples: "[Ivy Bridge, 3100 MHz]"
