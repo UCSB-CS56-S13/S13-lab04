@@ -20,22 +20,22 @@ public class Shoes  {
 
 	public String getColor ()
 	{
-		return "Stub"; 
+		return Color; 
 	}
 
 	public int getSize ()
 	{
-		return 42;
+		return Size;
 	}
 
 	public void setColor (String Color)
 	{
-		this.Color = "Red";
+		this.Color = Color;
 	}
 
 	public void setSize (int Size)
 	{
-		this.Size = 1;
+		this.Size = Size;
 	}
 
 	public String toString ()
