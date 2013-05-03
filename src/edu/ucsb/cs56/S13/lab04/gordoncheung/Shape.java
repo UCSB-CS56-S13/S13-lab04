@@ -40,6 +40,7 @@ public class Shape{
 
 
     public static void main(String args[]){
+	Shape square= new Shape("Square", 4);
     }
 
 
