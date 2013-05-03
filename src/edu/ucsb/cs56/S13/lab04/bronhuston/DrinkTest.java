@@ -22,7 +22,7 @@ public class DrinkTest {
 	this.coffee = new Drink("Latte","Medium",2);
     }
 
-    /** Test case for Drink No Arguement Constructor
+    /** Test case for Drink No Argument Constructor
         @see Drink
     */
     @Test
@@ -35,7 +35,7 @@ public class DrinkTest {
 
     }
 
-    /** Test case for Drink Three Arguement Constructor
+    /** Test case for Drink Three Argument Constructor
         @see Drink
     */
     @Test
