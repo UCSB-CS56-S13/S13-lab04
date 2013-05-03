@@ -21,19 +21,19 @@ public class Movie{
     }
 
     public String getTitle(){
-	return "stub";
+	return title;
     }
 
     public int getYearOfRelease(){
-	return -1;
+	return yearOfRelease;
     }
 
     public void setTitle(String title){
-	this.title = "stub";
+	this.title = title;
     }
 
     public void setYearOfRelease(int yearOfRelease){
-	this.yearOfRelease = -1;
+	this.yearOfRelease = yearOfRelease;
     }
 
     public String toString(){
