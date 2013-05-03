@@ -87,7 +87,7 @@ public class Shoes  {
 
 	/** 
 		A sample main that uses the class.
-    */]
+    */
    
 	public static void main (String [] args)
 	{
