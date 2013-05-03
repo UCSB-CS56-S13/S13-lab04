@@ -9,8 +9,8 @@ package edu.ucsb.cs56.S13.lab04.austinphillips;
 
 public class Roommate {
 
-    private String name="Martin B";;
-    private int levelOfAnnoyance=10000;
+    private String name="stub";;
+    private int levelOfAnnoyance=-42;
    
 
     /**
@@ -27,42 +27,57 @@ public class Roommate {
     */
     
     public Roommate(String name, int levelOfAnnoyance) {
-	this.name=name;
-	this.levelOfAnnoyance=levelOfAnnoyance;
+	/*	this.name=name;
+		this.levelOfAnnoyance=levelOfAnnoyance;*/
+	name="stub";
+	levelOfAnnoyance=-42;
     }
     
     
     /**
-       Get and Set methods for the roommate's attributes
+       Get method for name
     */
     public String getName(){
-	return this.name;
+	return "stub";
+	//	return this.name;
     }
-    
+    /**
+       Get method for levelOfAnnoyance
+    */    
     public int getLevelOfAnnoyance(){
-	    return this.levelOfAnnoyance;
+	return -42;    
+	//return this.levelOfAnnoyance;
 	}
-    
+    /**
+       Set method for name
+    */
     public void setName(String name){
-	    this.name=name;
+	
+	this.name="stubb";
 	}
-    
+    /**
+       Set method for levelOfAnnoyance
+    */
     public void setLevelOfAnnoyance(int levelOfAnnoyance){
-	    this.levelOfAnnoyance=levelOfAnnoyance;
+	
+	this.levelOfAnnoyance=-42;
 	}
     
     
     /**
 	   toString method combining the two attributes into one string
-	*/
+    */
     public String toString(){
-	    String sentence ="";
+	return "stub";
+	/* String sentence ="";
 	    int loa=this.getLevelOfAnnoyance();
 	    String name=this.getName();
 	    sentence+="My roommate is "+name+" and my current level of annoyance with him is "+loa;
-	    return sentence;	
+	    return sentence;*/	
     }
-    
+    /**
+       simple main method
+    */
     public static void main(String [] args) {	
 	Roommate Martin = new Roommate("Martin B", 10000);
 	Roommate Martin2 = new Roommate();
@@ -71,14 +86,15 @@ public class Roommate {
 	   equals method that tests for equality in object identity
 	*/
     public boolean equals(Object o){
-	    if(o==null)
+	/* if(o==null)
 		return false;
 	    else if(!(o instanceof Roommate))
 		return false;
 	    else{
 		Roommate Martin=(Roommate) o;
 		return(this.getName().equals(Martin.getName())) & (this.getLevelOfAnnoyance()==Martin.getLevelOfAnnoyance());
-	    }
+		}*/
+	return false;
 	}
     
     /**
@@ -86,7 +102,7 @@ public class Roommate {
 	*/
     public void smack(){
 	    System.out.println("ow.");
-	    levelOfAnnoyance=0;
+	    levelOfAnnoyance=-42;
 	}
 }
 
