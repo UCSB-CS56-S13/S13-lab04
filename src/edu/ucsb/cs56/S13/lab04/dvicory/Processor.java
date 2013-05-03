@@ -77,7 +77,16 @@ public class Processor {
        @param o another object to compare
        @return true if this object is the same processor as o
     */
-    public boolean equals(Object o) { return false; } // TODO stub
+    public boolean equals(Object o) {
+	if (o == null)
+	    return false;
+
+	if (!(o instanceof Processor))
+	    return false;
+
+	Processor p = (Processor)o;
+	return this.getFamily().equals(p.getFamily()) & this.getCoreSpeed() == p.getCoreSpeed();
+    }
 
     /**
        A sample main that uses the class
