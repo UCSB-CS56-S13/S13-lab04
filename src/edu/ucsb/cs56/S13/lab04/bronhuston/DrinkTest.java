@@ -6,7 +6,6 @@ import org.junit.Before;
 
 /** Test class for Drink
 
- * @author Phill Conrad
  * @author Bronwyn Perry-Huston
  * @version 2013/05/1 for lab04, cs56, s13
  * @see Drink
