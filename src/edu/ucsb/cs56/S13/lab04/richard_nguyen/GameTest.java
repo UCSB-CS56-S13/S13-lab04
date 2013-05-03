@@ -51,7 +51,7 @@ public class GameTest{
     }
     /**
        test setName from Game
-       @see Game#setName()
+       @see Game#setName(String name)
     */
 
     @Test
@@ -62,7 +62,7 @@ public class GameTest{
     }
     /**
        test setYear from Game
-       @see Game#setYear()
+       @see Game#setYear(int year)
     */
 
     @Test
@@ -73,7 +73,7 @@ public class GameTest{
     }
     /**
        test equal from Game
-       @see Game#equal()
+       @see Game#equals(Object a)
     */
 
     @Test
@@ -82,6 +82,10 @@ public class GameTest{
 	Game game1= new Game("CS56",5656);
 	assertEquals(true, game.equals(game1));
     }
+    /**
+       test toString
+       @see Game#toString
+    */
     @Test
     public void test_toString(){
 	Game game = new Game("Skyfall" ,2013);
