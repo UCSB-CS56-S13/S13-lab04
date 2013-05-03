@@ -37,12 +37,23 @@ public class Movie{
     }
 
     public String toString(){
-	return "stub";
+	return title + "(" + yearOfRelease + ")";
     }
 
     public boolean equals(Object o){
 
-	return false;
+	// boiler-plate for an equals method:
+	if (o==null) {return false};
+	if (! (o instanceof Movie) ) {return false;}
+	Movie m = (Movie) o;
+
+	if ( !(m.getTitle().equals(this.title)))
+	    return false;
+
+	if ( this.yearOfRelease != m.getYearOfRelease() )
+	    return false ;
+
+	return true;
     }
 
     public static void main(String [] args){
