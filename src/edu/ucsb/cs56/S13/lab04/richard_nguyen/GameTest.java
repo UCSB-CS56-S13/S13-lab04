@@ -18,8 +18,8 @@ public class GameTest{
     @Test
     public void test_DefaultConstructor_and_getters(){
 	Game game = new Game();
-	assertEquals("BattleToad",game.getName());
-	assertEquals(1007,game.getBarCode());
+	assertEquals("noname",game.getName());
+	assertEquals(0,game.getYear());
     }
     /**
        test 2 args constructor from GameTest
@@ -29,7 +29,7 @@ public class GameTest{
     public void test_TwoArgConstrutor_and_getters(){
 	Game game = new Game("Battlefield", 1974);
 	assertEquals("Battlefield", game.getName());
-	assertEquals(1974, game.getBarCode());
+	assertEquals(1974, game.getYear());
     }
     /**
        test getName from Game
@@ -37,17 +37,17 @@ public class GameTest{
     */
     @Test 
     public void testGetName(){
-	Game game = new Game("Battlefield", 4113);
+	Game game = new Game("Battlefield", 2012);
         assertEquals("Battlefield", game.getName());
     }
     /**
-       test getBarCode from Game
-       @see Game#getBarCode()
+       test getYear from Game
+       @see Game#getYear()
     */
     @Test
-    public void testGetBarCode(){
-        Game game = new Game("Battlefield", 4113);
-        assertEquals(4113, game.getBarCode());
+    public void testGetYear(){
+        Game game = new Game("COD MW 24", 4113);
+        assertEquals(4113, game.getYear());
     }
     /**
        test setName from Game
@@ -61,15 +61,15 @@ public class GameTest{
 	assertEquals("COD",game.getName());
     }
     /**
-       test setBarCode from Game
-       @see Game#setBarCode()
+       test setYear from Game
+       @see Game#setYear()
     */
 
     @Test
-    public void testSetBarCode(){
+    public void testYear(){
         Game game = new Game();
-        game.setBarCode(452);
-        assertEquals(452,game.getBarCode());
+        game.setYear(452);
+        assertEquals(452,game.getYear());
     }
     /**
        test equal from Game
@@ -77,10 +77,10 @@ public class GameTest{
     */
 
     @Test
-    public void testEqual(){
+    public void testEquals(){
 	Game game = new Game("CS56",5656);
 	Game game1= new Game("CS56",5656);
-	assertEquals(true, game.equal(game1));
+	assertEquals(true, game.equals(game1));
     }
     @Test
     public void test_toString(){
