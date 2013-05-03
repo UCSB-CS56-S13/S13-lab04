@@ -11,13 +11,13 @@ public class Movie{
     private int yearOfRelease; //year that movie was released
 
     public Movie(){
-	title = "stub";
-	yearOfRelease = -1;
+	title = null;
+	yearOfRelease = 0;
     }
 
     public Movie(String a, int b){
-	title = "stub";
-	yearOfRelease = -1;
+	title = a;
+	yearOfRelease = b;
     }
 
     public String getTitle(){
