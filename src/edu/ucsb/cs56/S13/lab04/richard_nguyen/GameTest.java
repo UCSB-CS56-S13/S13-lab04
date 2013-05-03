@@ -36,7 +36,7 @@ public class GameTest{
        @see Game#getName()
     */
     @Test 
-    public void testGetName(){
+    public void test_getName(){
 	Game game = new Game("Battlefield", 2012);
         assertEquals("Battlefield", game.getName());
     }
@@ -45,7 +45,7 @@ public class GameTest{
        @see Game#getYear()
     */
     @Test
-    public void testGetYear(){
+    public void test_getYear(){
         Game game = new Game("COD MW 24", 4113);
         assertEquals(4113, game.getYear());
     }
@@ -55,7 +55,7 @@ public class GameTest{
     */
 
     @Test
-    public void testSetName(){
+    public void test_setName(){
 	Game game = new Game();
 	game.setName("COD");
 	assertEquals("COD",game.getName());
@@ -66,7 +66,7 @@ public class GameTest{
     */
 
     @Test
-    public void testYear(){
+    public void test_setYear(){
         Game game = new Game();
         game.setYear(452);
         assertEquals(452,game.getYear());
@@ -77,7 +77,7 @@ public class GameTest{
     */
 
     @Test
-    public void testEquals(){
+    public void test_equals(){
 	Game game = new Game("CS56",5656);
 	Game game1= new Game("CS56",5656);
 	assertEquals(true, game.equals(game1));
