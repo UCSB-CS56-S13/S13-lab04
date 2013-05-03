@@ -9,75 +9,80 @@ public class ClockofDoom {
 	
 	private String event;
 	private int SecondsRemaining;
-	
+	/**
+		no arg constructor, sets event to null and SecondsRemaining to 0
+	*/
 	public ClockofDoom(){
-		this.event = "stub";
-		this.SecondsRemaining = -42;
+		this.event = null;
+		this.SecondsRemaining = 0;
 	}
-
+	/**
+		two arg construtor
+		@param event name of input event
+		@param TimeRemaining time left in seconds until the given event
+	*/
 	public ClockofDoom(String event, int TimeRemaining){
-		this.event = "stub";
-		this.SecondsRemaining = -42;
+		this.event = event;
+		this.SecondsRemaining = TimeRemaining;
 	}    
-
+	/**	setter for event
+		@param event name of input event
+	*/
 	public void setEvent(String event){
-		this.event="stub";
+		this.event = event;
 	}
-
+	/**	setter for SecondsRemaining
+		@param TimeRemaining input of seconds left until event
+	*/
 	public void setTimeRemaining(int TimeRemaining){
-		this.SecondsRemaining = 42;
+		this.SecondsRemaining = TimeRemaining;
 	}
-	
+	/**	getter for event
+		@return event name
+	*/
 	public String getEvent(){
-		return "stub";
+		return this.event;
 	}
-
+	/**	getter for SecondsRemaining
+		@return SecondsRemaining time in seconds until the event
+	*/
 	public int getTimeRemaining(){
-		return -42;
+		return this.SecondsRemaining;
 	}
-
+	/**	toString function that returns a formatted string of event and SecondsRemaining
+		@return Formatted String of both private variables
+	*/
 	public String toString(){
-		return "stub";
+		return ("The event is " + this.event +" with " + this.SecondsRemaining + " seconds remaining");
 	}
-
+	/**	equals function ot check equality between object instances.
+		@param o ambiguous object for input to check the equality
+		@return boolean of equality
+	*/
 	public boolean equals(Object o){
+		if (o == null)
+	    		return false;
+		if (!(o instanceof ClockofDoom))
+		    return false;
+
+		ClockofDoom Test = (ClockofDoom) o;
+
+		if ((Test.getEvent() == this.getEvent()) && (Test.getTimeRemaining() == this.getTimeRemaining())) {
+			return true;
+		}
+		
 		return false;
 	}
-	
+	/**
+		Example of a main of the class ClockofDoom
+	*/
 	public static void main (String [] args)
 	{
 		ClockofDoom Example = new ClockofDoom();
 		Example.setEvent("Insanity");
 		Example.setTimeRemaining(42);
-		Example.toString();
+		System.out.println(Example.toString());
 	}
-
 }
-
-/** ClockOfDoom represents time to some bad thing
- @author Phill Conrad
- @author Will M.
- @version 2013/04/09 for CS56 lecture
- */
-
-/*public class ClockOfDoom {
-	private int SecondsRemaining;
-	private String event;
-    public ClockofDoom(){
-		this.event = "stub";
-		this.SecondsRemaining = -42;
-	}
-	/** Constructor 
-	 @param event Something that will happen
-	 @param secondsRemaming how long til it happens
-	 */
-	
-	
-    /*public ClockOfDoom(String event, int secondsRemaining)
-    {
-		// assign attributes from parameters
-		// STUB.. do nothing!
-    }*/
-	
 
 
