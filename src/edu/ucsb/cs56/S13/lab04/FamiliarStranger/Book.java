@@ -16,8 +16,8 @@ public class Book {
      */
 
     public Book() {
-	this.title = "Look out! it's a stub!";
-	this.numPages = -42;
+	this.title = "no title";
+	this.numPages = 0;
     }
 
     /**
@@ -27,8 +27,8 @@ public class Book {
      */
 
     public Book(String title, int numPages) {
-	this.title = "Oh no, a stub!";
-	this.numPages = -42;
+	this.title = title;
+	this.numPages = numPages;
     }
 
     /**
@@ -36,28 +36,28 @@ public class Book {
       @return Title
      */
 
-    public String getTitle() {return "Stub!";}
+    public String getTitle() {return this.title;}
 
     /**
       Get the number of pages in the book
       @return Number of Pages
      */
 
-    public int getNumPages() {return -42;}
+    public int getNumPages() {return this.numPages;}
 
     /**
       Set the title
       @param title The new title
      */
 
-    public void setTitle(String title) {this.title = "Another stub!";}
+    public void setTitle(String title) {this.title = title;}
 
     /** 
       Set the number of pages
       @param numPages New number of pages
      */
 
-    public void setNumPages(int numPages) {this.numPages = -42;}
+    public void setNumPages(int numPages) {this.numPages = numPages;}
 
     /**
       Return information about a Book in the format:
@@ -67,8 +67,7 @@ public class Book {
      */
 
     public String toString() {
-	return "All hail the stubs";
-	//return this.title + " (" + this.numPages + " pages)";
+	return this.title + " (" + this.numPages + " pages)";
     }
 
     /**
@@ -78,12 +77,11 @@ public class Book {
      */
 
     public boolean equals(Book otherBook) {
-	//if(this.title != otherBook.getTitle())
-	//  return false;
-	//if(this.numPages != otherBook.getNumPages())
-	//  return false;
-	//return true;
-	return false;   //stub
+	if(this.title != otherBook.getTitle())
+	    return false;
+	if(this.numPages != otherBook.getNumPages())
+	    return false;
+	return true;
     }
 
     /**
