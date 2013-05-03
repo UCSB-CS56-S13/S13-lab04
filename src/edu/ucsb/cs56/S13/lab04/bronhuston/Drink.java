@@ -9,55 +9,62 @@ public class Drink{
     public Drink()
     {
         //stub
-        drink_name = "stub";
-        size = "stub";
-        cost_in_dollars = -42;
+        drink_name = "water";
+        size = "medium";
+        cost_in_dollars = 0;
     }
 
     public Drink(String drink_name, String size, int cost_in_dollars)
     {
-        //stub
+        this.drink_name = drink_name;
+        this.size = size;
+        this.cost_in_dollars = cost_in_dollars;
     }
 
     public String getDrinkName()
     {
-        return "stub";
+        return this.drink_name;
     }
 
     public String getSize()
     {
-        return "stub";
+        return this.size;
     }
 
     public int getCost()
     {
-        return -42;
+        return this.cost_in_dollars;
     }
 
     public void setDrinkName(String drink_name)
     {
-        //stub
+        this.drink_name = drink_name;
     }
 
     public void setSize(String size)
     {
-        //stub
+        this.size = size;
     }
 
     public void setCost(int cost_in_dollars)
     {
-        //stub
+        this.cost_in_dollars = cost_in_dollars;
     }
 
     public String toString()
     {
-        return "stub";
+        return this.size + " " + this.drink_name + ", $" + this.cost_in_dollars;
     }
 
     public boolean equals(Object o)
     {
-        //stub
-        return false;
+	    if (! (o instanceof Drink) )
+	        return false;
+	    Drink other = (Drink) o;
+	    return (other.getDrinkName().equals(this.getDrinkName()) &
+	            other.getSize().equals(this.getSize()) &
+                other.getCost()==this.getCost()); 
+        
     }  
 
     public static void main(String [] args) {
