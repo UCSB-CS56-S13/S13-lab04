@@ -103,6 +103,11 @@ public void test_equals1_Dorm(){
     Dorm d = new Dorm("Santa Catalina",450);
     assertTrue(ft.equals(d));
  }
+
+/**
+ *Test case for Dorm.equals(Object o)
+ *@see Dorm
+ */
  
  @Test
  public void test_equals2_Dorm(){
