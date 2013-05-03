@@ -1,10 +1,10 @@
 package edu.ucsb.cs56.S13.lab04.wmateer;
-/*
+
 /** ClockofDoom class
    @author Will Mateer
    @version CS56, S13, lab04
  */
-/*
+
 public class ClockofDoom {
 	
 	private String event;
@@ -52,15 +52,17 @@ public class ClockofDoom {
 		Example.toString();
 	}
 
-}*/
+}
+
 /** ClockOfDoom represents time to some bad thing
  @author Phill Conrad
  @author Will M.
  @version 2013/04/09 for CS56 lecture
  */
 
-public class ClockOfDoom {
-	
+/*public class ClockOfDoom {
+	private int SecondsRemaining;
+	private String event;
     public ClockofDoom(){
 		this.event = "stub";
 		this.SecondsRemaining = -42;
@@ -71,27 +73,11 @@ public class ClockOfDoom {
 	 */
 	
 	
-    public ClockOfDoom(String event, int secondsRemaining)
+    /*public ClockOfDoom(String event, int secondsRemaining)
     {
 		// assign attributes from parameters
 		// STUB.. do nothing!
-    }
+    }*/
 	
-    /**
-	 Get department Abbreviation (e.g. CMPSC, MATH, PSTAT)
-     */
-    
-    public String getEvent () { return "Stub, you sucka!"; } 
-	
-    /**
-	 Get course number (e.g. "56", "3A", "120A")
-     */
-    public int getSecondsRemaining () {
-		return -1; 
-    } // @@@ STUB fixme!!!
-    
-	
-} // class ClockOfDoom
-
 
 

@@ -1,16 +1,16 @@
-package edu.ucsb.ucsb.cs56.S13.lab04.wmateer;
+package edu.ucsb.cs56.S13.lab04.wmateer;
 
-/*import org.junit.Test;
+import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 /** test class for ClockOfDoom
-	@author Will Mateer
+    @author Will Mateer
     @version CS56, S13, lab04
     @see ClockofDoom
  */
-/*
+
 public class ClockofDoomTest{
 	
 	@Test 
@@ -56,7 +56,7 @@ public class ClockofDoomTest{
 	@Test 
 	public void testToString(){
 		ClockofDoom Tester = new ClockofDoom("Neo-Ice Age", 4500000);
-		assertEquals("Neo-Ice Age 4500000", Tester.ToString());
+		assertEquals("Neo-Ice Age 4500000", Tester.toString());
 
 	}
 	
@@ -68,25 +68,19 @@ public class ClockofDoomTest{
     
 	}
 
-}*/
+}
 
-import org.junit.Test;
-import org.junit.Before;
-import static org.junit.Assert.assertEquals;
-
-/** test class for ClockOfDoom
+/*test class for ClockOfDoom
  
  @author Phill Conrad and Will M.
  @version 2013.04.09
  @see ClockOfDoom
  
- */
+ 
 
 public class ClockOfDoomTest {
 	
-    /** Test case getEvent()
-     @see ClockofDoom#getEvent
-	 */
+    
 	
     private ClockOfDoom deathClock;
 	
@@ -100,14 +94,10 @@ public class ClockOfDoomTest {
     public void test_getEvent() {
 		assertEquals("Death",this.deathClock.getEvent());
     }
-	
-    /** Test case for getSecondRemaining() 
-     @see ClockOfDoom#getSecondsRemaining
-	 */
     
     @Test
     public void test_getSecondsRemaining() {
 		assertEquals(300,this.deathClock.getSecondsRemaining());
     }
 	
-}
+}*/
