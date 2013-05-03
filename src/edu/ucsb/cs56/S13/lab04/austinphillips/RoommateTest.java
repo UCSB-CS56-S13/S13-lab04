@@ -105,7 +105,7 @@ public void test_TwoArgConstructor() {
     public void test_Equals_NotEqual() {
 
 	Roommate Martin = new Roommate();
-	Roommate Martin2 = new Roommate("Martin B", 10000);
+	Roommate Martin2 = new Roommate("Todd", 10000);
 	assertEquals(false, Martin.equals(Martin2));
     }
 

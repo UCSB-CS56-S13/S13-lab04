@@ -9,8 +9,8 @@ package edu.ucsb.cs56.S13.lab04.austinphillips;
 
 public class Roommate {
 
-    private String name="stub";;
-    private int levelOfAnnoyance=-42;
+    private String name="Martin B";;
+    private int levelOfAnnoyance=10000;
    
 
     /**
@@ -27,10 +27,8 @@ public class Roommate {
     */
     
     public Roommate(String name, int levelOfAnnoyance) {
-	/*	this.name=name;
-		this.levelOfAnnoyance=levelOfAnnoyance;*/
-	name="stub";
-	levelOfAnnoyance=-42;
+	this.name=name;
+	this.levelOfAnnoyance=levelOfAnnoyance;
     }
     
     
@@ -38,29 +36,27 @@ public class Roommate {
        Get method for name
     */
     public String getName(){
-	return "stub";
-	//	return this.name;
+	return this.name;
     }
     /**
        Get method for levelOfAnnoyance
     */    
     public int getLevelOfAnnoyance(){
-	return -42;    
-	//return this.levelOfAnnoyance;
+	return this.levelOfAnnoyance;
 	}
     /**
        Set method for name
     */
     public void setName(String name){
 	
-	this.name="stubb";
+	this.name=name;
 	}
     /**
        Set method for levelOfAnnoyance
     */
     public void setLevelOfAnnoyance(int levelOfAnnoyance){
 	
-	this.levelOfAnnoyance=-42;
+	this.levelOfAnnoyance=levelOfAnnoyance;
 	}
     
     
@@ -68,12 +64,11 @@ public class Roommate {
 	   toString method combining the two attributes into one string
     */
     public String toString(){
-	return "stub";
-	/* String sentence ="";
+	String sentence ="";
 	    int loa=this.getLevelOfAnnoyance();
 	    String name=this.getName();
 	    sentence+="My roommate is "+name+" and my current level of annoyance with him is "+loa;
-	    return sentence;*/	
+	    return sentence;	
     }
     /**
        simple main method
@@ -86,15 +81,14 @@ public class Roommate {
 	   equals method that tests for equality in object identity
 	*/
     public boolean equals(Object o){
-	/* if(o==null)
+	if(o==null)
 		return false;
 	    else if(!(o instanceof Roommate))
 		return false;
 	    else{
 		Roommate Martin=(Roommate) o;
 		return(this.getName().equals(Martin.getName())) & (this.getLevelOfAnnoyance()==Martin.getLevelOfAnnoyance());
-		}*/
-	return false;
+		}
 	}
     
     /**
@@ -102,7 +96,7 @@ public class Roommate {
 	*/
     public void smack(){
 	    System.out.println("ow.");
-	    levelOfAnnoyance=-42;
+	    levelOfAnnoyance=0;
 	}
 }
 
