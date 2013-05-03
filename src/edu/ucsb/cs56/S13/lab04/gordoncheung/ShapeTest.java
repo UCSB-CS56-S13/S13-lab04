@@ -21,8 +21,8 @@ public class ShapeTest {
     @Test
     public void test_DefaultConstructor_and_getters() {
 	Shape s = new Shape();
-	assertEquals("stub",s.getName());
-	assertEquals(5,s.getSides());
+     	assertEquals(null,s.getName());
+	assertEquals(0,s.getSides());
 	
     }
     
@@ -30,18 +30,18 @@ public class ShapeTest {
     public void test_TwoArgConstructor_and_getters() {
 	
 	
-	Shape s = new Shape("namestub",6);
-	assertEquals("namestub",s.getName());
-	assertEquals(6,s.getSides());	
+	Shape s = new Shape("square",4);
+	assertEquals("square",s.getName());
+	assertEquals(4,s.getSides());	
     }
 
     @Test
     public void test_Setters(){
 	Shape s = new Shape();
-	s.setName("fail");
-	s.setSides(100);
-	assertEquals("fail",s.getName());
-	assertEquals(100,s.getSides());
+	s.setName("Triangle");
+	s.setSides(3);
+	assertEquals("Triangle",s.getName());
+	assertEquals(3,s.getSides());
     }
     @Test
     public void test_toString() {

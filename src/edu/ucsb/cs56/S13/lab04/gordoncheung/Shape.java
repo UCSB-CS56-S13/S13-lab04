@@ -7,33 +7,35 @@ public class Shape{
     public int sides;
     
     public Shape(){
-
     }
     public Shape(String name, int sides){
-	this.name="name";
-	this.sides=4;
+	this.name=name;
+	this.sides=sides;
     }
 
     public void setName(String name){
-	this.name="namestub";
+	this.name=name;
     }
     public void setSides(int sides){
-	this.sides=6;
+	this.sides=sides;
     }
     public String getName(){
-	return "stub";
+	return name;
     }
     public int getSides(){
-	return 5;
+	return sides;
     }
 
     public String toString(){
-	Shape s = new Shape("name", 5);
-	return "toStringStub";
-	//return "Name= " + name + ", Sides= " + sides;
+	return "Name: " + name + ", Sides: " + sides;
     }
-    public boolean equals(Shape s){
-	return true;
+    public boolean equals(Object o) {
+
+        if (!(o instanceof Shape))
+            return false;
+        Shape temp = (Shape) o;
+	if(temp.getName()==this.getName() && temp.getSides()==this.getSides())return true;
+	return false;
     }
 
 
