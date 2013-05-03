@@ -92,6 +92,8 @@ public class Processor {
        A sample main that uses the class
     */
     public static void main(String[] args) {
-	// TODO stub
+	Processor ivyBridge = new Processor("Ivy Bridge", 3100);
+	Processor genericx86 = new Processor();
+	System.out.println(ivyBridge);
     }
 }
