@@ -5,7 +5,7 @@ package edu.ucsb.cs56.S13.lab04.mlindsay56;
 @author Marc Lindsay
 @version CS56, S13, lab04
 
-Coffee represents a coffee beverage.
+
 */
 public class Coffee {
 	
@@ -21,8 +21,8 @@ public class Coffee {
     }
     
     /** 
-		@param type of Coffee, (e.g. Latte, Espresso)
-		@param height of beverage in inches (e.g. 10, 11, 5)
+		@param typeOfCoffee is the type of coffee, (e.g. Latte, Espresso)
+		@param height_inches is the height in inches (e.g. 10, 11, 5)
      */
     public Coffee(String typeOfCoffee, int height_inches){
     this.typeOfCoffee = typeOfCoffee;
@@ -47,7 +47,7 @@ public class Coffee {
     
 	/**
 		set the type of this coffee
-		@param type of coffee beverage
+		@param typeOfCoffee (e.g. "Latte")
 	*/    
     public void setTypeOfCoffee(String typeOfCoffee){
 	this.typeOfCoffee = typeOfCoffee;
@@ -55,7 +55,7 @@ public class Coffee {
 	
 	/**
 		set the height of this coffee
-		@param height of coffee beverage in inches
+		@param height_inches (e.g. 12)
 	*/
     public void setHeight_inches(int height_inches){
 	this.height_inches = height_inches;
