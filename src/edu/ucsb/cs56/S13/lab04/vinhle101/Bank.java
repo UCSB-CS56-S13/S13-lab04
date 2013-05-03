@@ -25,15 +25,14 @@ public class Bank {
        @param enteredAccount Account Name Input (e.g. Checking Account, Savings Account)
      */
     public void setBankAccount(String enteredAccount){
-	this.bankingAccount = "stub";
+	this.bankingAccount = enteredAccount;
     }
     /**
        @param enteredBalance Account Balance Input, (e.g. 10000, 20000, 99999, 100000)
      */
     public void setAccountBalance(int enteredBalance)
     {
-	int stub = -42;
-	this.AccountBalance = stub;
+	this.AccountBalance = enteredBalance;
     }
 
     // Getters
@@ -41,23 +40,21 @@ public class Bank {
        @return bank account name (e.g. Checking Account, Savings Account)
     */
     public String getBankAccount(){
-	return ("stub");
+	return (this.bankingAccount);
     }
     /**
        @return Account balance (e.g. 10000, 20000, 99999, 100000)
     */
     public int getAccountBalance(){
-	int stub = -42;
-	return (stub);
+	return (this.AccountBalance);
     }
 
-    /** toString method, returns string rep. "The Banking Account is: "[Checking Account, Savings Account]" The Balance is "[10000, 20000]"
+    /** toString method, returns string rep. "The Banking Account is: "[Checking Account, Savings Account]", The Balance is "[10000, 20000]"
 	@return String representation of the Bank Account name and balance
      */
     public String toString(){
-	return "stub";
-	/**return ("The Banking Account is: " + this.bankingAccount + " The Balance is " + this.AccountBalance);
-	 */
+	return ("The Banking Account is: " + this.bankingAccount + ", The Balance is " + this.AccountBalance);
+	 
     }
     
     // equals method
