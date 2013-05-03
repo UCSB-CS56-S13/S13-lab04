@@ -15,6 +15,7 @@ import static org.junit.Assert.assertFalse;
 
 public class ShoesTest	{
 	
+	/** Test case for default constructor and two getters */
 	@Test
 	public void test_DefaultConstructor_and_getters() {
 		
@@ -24,7 +25,7 @@ public class ShoesTest	{
 		
 	}
 	
-	
+	/** Test case for two attribute constructor and two getters */
 	@Test
 	public void test_TwoArgConstructor_and_getters_KJEE() {
 		
@@ -33,6 +34,7 @@ public class ShoesTest	{
 	assertEquals(40,s.getSize());
     }
     
+    /** Test case for toString() method */
     @Test
     public void test_toString() {
 	
@@ -40,6 +42,7 @@ public class ShoesTest	{
 	assertEquals("Color: Green Size: 40",s.toString());
     }
 	
+	/** Test case for .equals method */
 	@Test
 	public void test_equals() {
 		
@@ -48,13 +51,15 @@ public class ShoesTest	{
 	assertTrue(s1.equals(s2));
     }
     
+    /** Test case for getColor() method */
     @Test
-    public void test_getColr()	{
+    public void test_getColor()	{
 		
 	Shoes s = new Shoes("Black", 37);
 	assertEquals("Black", s.getColor());
 	}
 	
+	/** Test case for getSize() method */
 	@Test
 	public void test_getSize()	{
 		
@@ -62,6 +67,7 @@ public class ShoesTest	{
 	assertEquals(37, s.getSize());	
 	}
 	
+	/** Test case for setColor() method */
 	@Test
 	public void test_setColor()	{
 		
@@ -70,6 +76,7 @@ public class ShoesTest	{
 	assertEquals("Blue",s.getColor());
 	}
 	
+	/** Test case for setSize() method */
 	@Test
 	public void test_setSize()	{
 		
