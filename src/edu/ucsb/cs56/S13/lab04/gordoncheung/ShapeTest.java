@@ -17,7 +17,9 @@ import static org.junit.Assert.assertFalse;
 
 public class ShapeTest {
 
-
+    /**
+       test default constructor and getter
+     */
     @Test
     public void test_DefaultConstructor_and_getters() {
 	Shape s = new Shape();
@@ -26,6 +28,9 @@ public class ShapeTest {
 	
     }
     
+    /**
+       test twoarg constructor
+    */
     @Test
     public void test_TwoArgConstructor_and_getters() {
 	
@@ -35,6 +40,9 @@ public class ShapeTest {
 	assertEquals(4,s.getSides());	
     }
 
+    /**
+       test the setter method
+     */
     @Test
     public void test_Setters(){
 	Shape s = new Shape();
@@ -43,6 +51,10 @@ public class ShapeTest {
 	assertEquals("Triangle",s.getName());
 	assertEquals(3,s.getSides());
     }
+
+    /**
+       test the toString method
+    */
     @Test
     public void test_toString() {
 	
@@ -50,6 +62,9 @@ public class ShapeTest {
 	assertEquals("Name: Square, Sides: 4",s.toString());
     }
 
+    /**
+       test the equals method
+     */
     @Test
 	public void test_equals() {
 		
@@ -58,7 +73,9 @@ public class ShapeTest {
 	assertTrue(s1.equals(s2));
     }
 
-
+    /**
+       test notequal
+    */
     @Test
 	public void test_notequal() {
 		
@@ -66,6 +83,5 @@ public class ShapeTest {
 	Shape s2 = new Shape("cow",10000);
 	assertFalse(s1.equals(s2));
     }
-
 
 }
