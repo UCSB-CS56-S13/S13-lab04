@@ -15,7 +15,9 @@ import static org.junit.Assert.assertFalse;
 
 public class CityTest {
 
-
+	/** test for the default no constructor method
+	 *  and also the getter method
+	 */
     @Test
 	public void test_DefaultConstructor_and_getters() {
 	City city1 = new City();
@@ -24,16 +26,18 @@ public class CityTest {
 	
     }
     
+    /** test for the two parameter constructor that I wrote
+     *  and also test the getter again
+     */
     @Test
 	public void test_TwoArgConstructor_and_getters_gothem() {
-	
-	
 	City city1 = new City("Gothem",30000000);
 	assertEquals("Gothem",city1.getName());
 	assertEquals(30000000,city1.getPopulation());
-	
     }
 	
+	/** test for the default constructor and toString
+	 */
     @Test
 	public void test_toString_santaBarbara() {
 	
@@ -41,6 +45,8 @@ public class CityTest {
 	assertEquals("City name: Santa Barbara. Population: 89045",city1.toString());
     }
 
+	/** test for the two parameter constructor and toString
+	 */
     @Test
 	public void test_toString_gothem() {
 		
@@ -49,6 +55,9 @@ public class CityTest {
 	
     }
 
+	/** test for the equals method, when two city objects are equal
+	 *  and were created using two parameter constructor
+	 */
     @Test
 	public void test_equals_equal1() {
 		
@@ -57,6 +66,9 @@ public class CityTest {
 	assertTrue(city1.equals(city2));
     }
 
+	/** test for the equals method, when two city objects are equal
+	 *  and were created using the default constructor
+	 */
     @Test
 	public void test_equals_equal2() {
 		
@@ -65,6 +77,8 @@ public class CityTest {
 	assertTrue(city1.equals(city2));
     }
 
+	/** test for the equals method, when two city objects are not equal
+	 */
     @Test
 	public void test_equals_notequal() {
 		
