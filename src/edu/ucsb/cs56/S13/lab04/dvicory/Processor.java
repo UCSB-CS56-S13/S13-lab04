@@ -22,9 +22,9 @@ public class Processor {
        No-arg constructor for Processor, creates a generic processor with family name "Generic x86" and a core speed of 16 MHz
      */
     public Processor() {
-	// TODO stub
-	this.family = "stub";
-	this.coreSpeed = -42;
+	// make it default to a generic x86 cpu with a 16 MHz clock
+	this.family = "Generic x86";
+	this.coreSpeed = 16;
     }
 
     /**
@@ -34,9 +34,8 @@ public class Processor {
        @param coreSpeed the core speed of the processor, in MHz
     */
     public Processor(String family, int coreSpeed) {
-	// TODO stub
-	this.family = "stub";
-	this.coreSpeed = -42;
+	this.family = family;
+	this.coreSpeed = coreSpeed;
     }
 
     /**
