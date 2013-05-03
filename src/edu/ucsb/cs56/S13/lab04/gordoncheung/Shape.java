@@ -24,6 +24,7 @@ public class Shape{
 
     /**
        setName method to set the name variable
+       @param name name (e.g. Square, Triangle)
      */
     public void setName(String name){
 	this.name=name;
@@ -31,13 +32,15 @@ public class Shape{
 
     /**
        setSides method to set the sides variable
+       @param sides sides (e.g. 1,2,3,4)
      */
     public void setSides(int sides){
 	this.sides=sides;
     }
     
     /**
-    getName returns the name 
+       getName returns the name
+       @return name (e.g. Square, Triangle)
      */
     public String getName(){
 	return this.name;
@@ -45,13 +48,15 @@ public class Shape{
     
     /**
        getSides returns the sides
+       @return sides (e.g. 1,2,3,4)
      */
     public int getSides(){
 	return this.sides;
     }
 
     /**
-       toString returns a string like "Name: Square, Sides: 4"
+       toString returns a string representation of shape e.g "Name: Square, Sides: 4"
+       @return string representation of Shape
      */
     public String toString(){
 	return "Name: " + name + ", Sides: " + sides;
@@ -59,6 +64,7 @@ public class Shape{
 
     /** 
 	equals method compares two shape objects
+	@return true if it is a shape
      */
     public boolean equals(Object o) {
 
