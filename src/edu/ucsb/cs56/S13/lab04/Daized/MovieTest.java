@@ -17,7 +17,7 @@ public class MovieTest{
     public void test_DefaultConstructor_and_getters(){
 
     Movie m = new Movie();
-    assertEquals(null, m.getTitle());
+    assertEquals("", m.getTitle());
     assertEquals( 0 , m.getYearOfRelease());
 }
 
@@ -74,7 +74,7 @@ public void test_toString_Inception(){
     public void test_toString_RagingBull(){
 
     Movie m = new Movie("Raging Bull",1980);
-    assertEquals("Ragin Bull (1980)", m.toString());
+    assertEquals("Raging Bull (1980)", m.toString());
 }
 
 @Test

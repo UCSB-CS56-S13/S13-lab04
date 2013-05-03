@@ -11,7 +11,7 @@ public class Movie{
     private int yearOfRelease; //year that movie was released
 
     public Movie(){
-	title = null;
+	title = "";
 	yearOfRelease = 0;
     }
 
@@ -37,13 +37,13 @@ public class Movie{
     }
 
     public String toString(){
-	return title + "(" + yearOfRelease + ")";
+	return title + " (" + yearOfRelease + ")";
     }
 
     public boolean equals(Object o){
 
 	// boiler-plate for an equals method:
-	if (o==null) {return false};
+	if (o==null) {return false;}
 	if (! (o instanceof Movie) ) {return false;}
 	Movie m = (Movie) o;
 
