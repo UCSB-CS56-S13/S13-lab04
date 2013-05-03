@@ -23,8 +23,8 @@ public class ShapeTest {
     @Test
     public void test_DefaultConstructor_and_getters() {
 	Shape s = new Shape();
-     	assertEquals(null,s.getName());
-	assertEquals(0,s.getSides());
+     	assertEquals("Triangle",s.getName());
+	assertEquals(3,s.getSides());
 	
     }
     

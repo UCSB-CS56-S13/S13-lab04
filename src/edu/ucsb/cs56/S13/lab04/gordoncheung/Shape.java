@@ -4,8 +4,8 @@ package edu.ucsb.cs56.S13.lab04.gordoncheung;
    A class to represent a shape. Has variables for the name of the shape and the number of sides the shape has.
  */	
 public class Shape{
-    public String name;
-    public int sides;
+    private String name="Triangle";
+    private int sides=3;
     
 
     /**
