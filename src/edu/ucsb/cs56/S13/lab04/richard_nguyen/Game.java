@@ -4,9 +4,7 @@ package edu.ucsb.cs56.S13.lab04.richard_nguyen;
     @author Richard Nguyen
     @version 05/02/2013 for lab04, cs56, S13
 */
-
-
-class Game{
+public class Game{
     private String name="noname";  //name of game
     private int year=0; // year released
     /** Default Constructor creates a noname and the year 0 */
