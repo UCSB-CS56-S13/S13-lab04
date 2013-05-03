@@ -63,15 +63,14 @@ import static org.junit.Assert.assertFalse;
 	*/
 	
 	@Test
-	public void test_setters_Hatt() {
+	public void test_nameSetter_Simpson() {
 		
 		CruisePassenger c = new CruisePassenger();
-		c.setRoomNum(42);
-		c.setPassenger("Sir Topham Hatt");
-		assertEquals("Sir Topham Hatt", c.getPassenger());
-		assertEquals(42, c.getRoomNum());
+		c.setPassenger("Homer Simpson");
+		assertEquals("Homer Simpson", c.getPassenger());
 		
 	}
+	
 	
 	/**
 	test passenger name setter
@@ -79,16 +78,42 @@ import static org.junit.Assert.assertFalse;
 	*/
 	
 	@Test
-	public void test_setters_Simpson() {
+	public void test_nameSetter_Hatt() {
+		
+		CruisePassenger c = new CruisePassenger();
+		c.setPassenger("Sir Topham Hatt");
+		assertEquals("Sir Topham Hatt", c.getPassenger());
+		
+	}
+	
+	/**
+	test roomNum setter
+	@see CruisePassenger#setRoomNum
+	*/
+	
+	@Test
+	public void test_roomNumSetter_300() {
 		
 		CruisePassenger c = new CruisePassenger();
 		c.setRoomNum(300);
-		c.setPassenger("Homer Simpson");
-		assertEquals("Homer Simpson", c.getPassenger());
 		assertEquals(300, c.getRoomNum());
 		
 	}
 
+	/**
+	test roomNum setter
+	@see CruisePassenger#setRoomNum
+	*/
+	
+	@Test
+	public void test_roomNumSetter_42() {
+		
+		CruisePassenger c = new CruisePassenger();
+		c.setRoomNum(42);
+		assertEquals(42, c.getRoomNum());
+		
+	}
+	
 	/**
      test toString
      @see CruisePassenger#toString
