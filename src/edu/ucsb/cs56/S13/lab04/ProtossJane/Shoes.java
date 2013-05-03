@@ -1,10 +1,12 @@
-/** Shoes Class from W01
- * @version 05.01.2013
- * @author Wenjie Haung
-*/
-
 package edu.ucsb.cs56.S13.lab04.ProtossJane;
 
+
+/** class for Shoes from W01
+
+@author Wenjie Huang
+@version CS56, S13, lab04, 05/03/2013
+
+*/
 
 public class Shoes  {
 	private String Color = "Yellow";
