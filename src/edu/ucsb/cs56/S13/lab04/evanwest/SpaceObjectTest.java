@@ -24,8 +24,8 @@ public class SpaceObjectTest{
     public void test_twoArgConstructor_and_Getters(){
 	//make object with other args, check values
 	SpaceObject o = new SpaceObject("Mars", 2);
-	assertEquals(1,o.getCatalogNumber());
-	assertEquals("Earth",o.getName());
+	assertEquals(2,o.getCatalogNumber());
+	assertEquals("Mars",o.getName());
     }
 
     @Test

@@ -17,8 +17,8 @@ public class SpaceObject{
 
     /** Default constructor creates a SpaceObject "Earth" with catalog number 1 */
     public SpaceObject(){
-	//this.name="Earth";
-	//this.catalogNumber=1;
+	this.name="Earth";
+	this.catalogNumber=1;
     }
 
     /**
@@ -26,46 +26,42 @@ public class SpaceObject{
        @param catalogNumber arbitrary catalog number assigned to object, should be distinct
     */
     public SpaceObject(String name, int catalogNumber){
-	//this.name=name;
-	//this.catalogNumber=catalogNumber;
+	this.name=name;
+	this.catalogNumber=catalogNumber;
     }
 
     /** @param name sets new String name for the object, (e,g, Earth etc) */
     public void setName(String name){
-	//this.name=name;
+	this.name=name;
     }
 
     /** @return String containing name of the object (e.g. Earth etc) */
     public String getName(){
-	return "stub";
-	//return this.name;
+	return this.name;
     }
 
     /** @param catalogNumber integer to assign as new catalog number for object, generally incrementing per object */
     public void setCatalogNumber(int catalogNumber){
-	//this.catalogNumber=catalogNumber;
+	this.catalogNumber=catalogNumber;
     }
 
     /** @return integer that is catalog number of object, largely arbitrary */
     public int getCatalogNumber(){
-	return -1;
-	//return this.catalogNumber;
+	return this.catalogNumber;
     }
 
     /** Prints object to String with name and catalog number
 	@return String with format "CatalogNumber - Name"
     */
     public String toString(){
-	return "stub";
-	//return this.catalogNumber+"-"+this.name;
+	return this.catalogNumber+"-"+this.name;
     }
 
     /**Are two objects the same?
        @return Whether two objects have the same name and catalog number
      */
     public boolean equals(SpaceObject o){
-	//return o.getName().equals(this.name) && o.getCatalogNumber()==this.catalogNumber;
-	return false;
+	return o.getName().equals(this.name) && o.getCatalogNumber()==this.catalogNumber;
     }
 
     /**
