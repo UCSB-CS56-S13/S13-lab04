@@ -9,6 +9,7 @@ package edu.ucsb.cs56.S13.lab04.EricHuang2;
 */
 public class City {
 	
+	/* create two private variable */
 	private String name = "";
 	private int population = 0;
 	
@@ -21,8 +22,11 @@ public class City {
 	{
 		//this.name = "stub";
 		//this.population = 0;
+		
+		// set the name to default "Santa Barbara"
 		this.name = "Santa Barbara";
-		this.population = 89045;
+		// set the population to the default 89045
+		this.population = 89045; 
 	}
 	
 	/** 
@@ -33,7 +37,10 @@ public class City {
 	{
 		//this.name = "stub";
 		//this.population = 0;
+		
+		// set the name
 		this.name = name;
+		// set the population
 		this.population = population;
 	}
 	
@@ -43,7 +50,7 @@ public class City {
 	public String getName()
 	{
 		//return "stub";
-		return this.name;
+		return this.name; // return private variable "name"
 	}
 	
 	/**
@@ -52,7 +59,23 @@ public class City {
 	public int getPopulation()
 	{
 		//return 0;
-		return this.population;
+		return this.population; // return private variable "population"
+	}
+	
+	/**
+	 *  @param name is the name of the city
+	 */
+	public void setName(String name)
+	{
+		this.name = name; // set private varialbe "name" to the parameter
+	}
+	
+	/**
+	 *  @param population is the population of the city
+	 */
+	public void setPopulation(int population)
+	{
+		this.population = population; // set the private varialbe "population" the parameter
 	}
 	
 	/**
@@ -62,8 +85,10 @@ public class City {
 	public String toString()
 	{
 		//return "stub";
+		
+		// modify the string to fit the format I want for output
 		String result = "City name: " + this.name + ". Population: " + this.population;
-		return result;
+		return result; // return
 	}
 	
 	/**
@@ -72,17 +97,19 @@ public class City {
      */
 	public boolean equals(Object o)
 	{
-		/* if the city is missing more than 3 people you might have a 
-		 * problem...
+		/* I have tolerance because sometimes people might want to move 
+		 * around to other places out of the blue, I guess. I don't know
+		 * I never have to run a city in my past 20 years of existence
 		 */
-		//return false;
 		int tolerance = 3;
-		if (! (o instanceof City) )
+		if (! (o instanceof City) ) // if not a city object return false
 			return false;
 		City otherCity = (City) o;
 		
 		return (otherCity.getName().equals(this.getName()) &
 		Math.abs(otherCity.getPopulation() - this.getPopulation()) < tolerance );
+		
+		//return false;
 	}
 	
 	/** 
