@@ -32,7 +32,12 @@ public class Basketball {
        @return numOfWins (e.g. 54, 43, 43, 45) 
 
     */
-    public int getNumOfWIns() { 
+
+    // ORIGINAL lolkaiwut CODE WAS:
+    // public int getNumOfWIns() { 
+    // END ORIGINAL CODE
+
+    public int getNumOfWins() { // FIXED BY P.CONRAD SO CODE WOULD COMPILE.
 	return numOfWins; 
     }
  

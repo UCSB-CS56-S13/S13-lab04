@@ -71,6 +71,24 @@
    </junit>
   </target>
 
+ <target name="test1" depends="compile" description="run junit tests on -Dghuser=foo">
+
+   <junit haltonerror="no" haltonfailure="no">
+       <classpath refid="project.class.path" />
+
+       <batchtest fork="yes">
+          <fileset dir="src">
+            <!-- this will pick up every class with a name ending in Test -->
+            <include name="**/${ghuser}/*Test.java"/>
+          </fileset>
+       </batchtest>
+
+        <formatter type="plain" usefile="false" /> 
+       
+   </junit>
+  </target>
+
+
   <target name="clean" description="delete unnecessary files and directories">
     <delete dir="build" failonerror="false" verbose="true" />
     <mkdir dir="build" />

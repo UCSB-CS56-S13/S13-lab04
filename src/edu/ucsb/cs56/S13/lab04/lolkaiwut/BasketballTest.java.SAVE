@@ -33,7 +33,8 @@ public class BasketballTest {
 
 	Basketball b = new Basketball("Clippers",55);
 	assertEquals("Clippers",b.getTeam());
-	assertEquals(55,b.getNumOfWIns(),tol);
+	// assertEquals(55,b.getNumOfWIns(),tol); // ORIGINAL CODE BY lolkaiwut
+	assertEquals(55,b.getNumOfWins(),tol); // ADDED P. CONRAD SO CODE WOULD COMPILE
 
     }
 
@@ -42,7 +43,8 @@ public class BasketballTest {
 
 	Basketball b = new Basketball("Suns",43);
 	assertEquals("Suns",b.getTeam());
-	assertEquals(43,b.getNumOfWIns(),tol);
+	// assertEquals(43,b.getNumOfWIns(),tol); // ORIGINAL CODE BY lolkaiwut
+	assertEquals(43,b.getNumOfWins(),tol); // ADDED P. CONRAD SO CODE WOULD COMPILE
 
     }
 
