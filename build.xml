@@ -54,6 +54,10 @@
  </target>        
 
 
+ <target name="run" depends="compile" description="run; note needs args, as in ant run -Dclass=jsmith.Skate">
+    <java classpath="build" classname="edu.ucsb.cs56.S13.lab04.${class}" />
+ </target>
+
  <target name="test" depends="compile" description="run junit tests">
 
    <junit haltonerror="no" haltonfailure="no">
